@@ -1,0 +1,307 @@
+.frame-parent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.category-parent .category {
+    color: var(--foundation-yellow-main, #E59312);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.we-offer-best-services-parent {
+    display: contents;
+}
+
+.frame-child {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: red;
+    width: 150px;
+    height: 4px;
+}
+
+.we-offer-best {
+    color: #181E4B;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.category-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.frame-parent2 {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.group-parent {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 200px;
+    width: 170px;
+}
+.group-parent:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+  }
+
+.safar-family-wrapper {
+    color: #1E1D4C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* -----------frame-parent2 ----------*/
+.frame-parent3 {
+    padding: 50px 84px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #FFF;
+}
+
+.wtrip-wrapper {
+    display: flex;
+    gap: 27px;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+.wtrip-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card-crausel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 10px;
+    background: #F7F7FF;
+    height: 340px;
+    width: 320px;
+}
+
+.crausel-img {
+    width: 303px;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.crausel-details {
+    width: 282px;
+    padding: 10px;
+}
+
+.crausel-from,
+.review,
+.rating-parent,
+.nav-item {
+    color: #1E1D4C;
+    text-align: start;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rating-parent {
+    display: flex;
+    margin-top: 10px;
+}
+
+.rating {
+    display: flex;
+    padding: 5px 15px;
+    justify-content: center;
+    text-align: center;
+    gap: 9px;
+    border-radius: 6px;
+    color: #E59312;
+    font-size: 16px;
+    background: var(--foundation-yellow-yellow-2, #F9E5C6);
+}
+
+.review {
+    font-size: 14px;
+    padding: 7px 13px;
+}
+
+.crausel-day img {
+    width: 20px;
+    height: 25px;
+}
+
+.crausel-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: var(--font-3, #76757E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.crausel-day {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.crausel-from {
+    font-size: 16px;
+}
+
+/* trip crasel  */
+
+
+.trip-crausel {
+    width: 283px;
+    height: 369px;
+    margin-top: 10px;
+}
+
+.trip-crausel {
+    width: 283px;
+    height: 369px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.trip-slogans {
+    position: absolute;
+    left: calc(33% - 2px);
+    line-height: 675px;
+}
+
+.wtrip-crausel {
+    display: flex;
+}
+
+.trip-left-button,
+.trip-right-button {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFF;
+    color: black;
+    font-size: 23px;
+    transform: translateY(379%);
+    cursor: pointer;
+    padding: 3px;
+    z-index: 1;
+    margin: 0 -14px 0 -14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.trip-left-button:hover,
+.trip-right-button:hover {
+    background-color: #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.trip-right-button {
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: tranlateY;
+}
+
+/*  Himachal crausel  */
+
+.t-wtrip-wrapper {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+.t-wtrip-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.t-card-crausel {
+    display: flex;
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 10px;
+    background: #F7F7FF;
+    height: 300px;
+    width: 208px;
+}
+
+.t-crausel-img {
+    width: 208px;
+    height: 297px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 193px;
+    height: 40px;
+}

@@ -1,0 +1,123 @@
+.footer-parent {
+    width: 100%
+}
+
+.subscribe-details {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 10px;
+    background: #F7F7FF;
+    height: 300px;
+}
+
+.subscribe-details img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.child-class {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 50%;
+    height: 50%;
+}
+
+.submit-button input {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    outline: none;
+    border: none;
+}
+
+.submit-button {
+    display: flex;
+    gap: 20px;
+}
+.select-class span {
+    color: var(--font-white, #FFF);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.select-class h1 {
+    font-size: 22px;
+}
+.submit-button button {
+    width: 140px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--primery-1, #3D3DFF);
+    outline: none;
+    border: none;
+
+    color: var(--white, #FFF);
+text-align: center;
+font-family: Open Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+input[type="email"] {
+    background-image: url('../Assets/navbar/email.svg');
+    background-size: 19px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.contact-details{
+display: flex;
+width: 100%;
+height: 100%;
+padding: 10px 0px;
+justify-content: space-between;
+align-items: center;
+}
+.footer-logo {
+    margin-left: 15px;
+}
+.contact {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.contact img{
+    height: 20px;
+}
+.email {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.email img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+  
