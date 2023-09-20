@@ -10,6 +10,11 @@ import ladakh from "../Assets/navbar/ladakh.jpg";
 import star from "../Assets/navbar/star.svg";
 import watch from "../Assets/navbar/ri_time-line.svg";
 import travel from "../Assets/navbar/travel1.jpg";
+import trave5 from "../Assets/navbar/travel5.jpg";
+import trave6 from "../Assets/navbar/travel6.jpg";
+import trave7 from "../Assets/navbar/travel7.jpg";
+import trave8 from "../Assets/navbar/travel8.jpg";
+import trave9 from "../Assets/navbar/travel9.jpg";
 // import right from "../Assets/navbar/right-button.svg";
 
 export default function Main() {
@@ -165,7 +170,7 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave5} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -188,7 +193,7 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave6} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -211,7 +216,7 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave7} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -234,7 +239,147 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave8} alt="" />
+              <div className="crausel-details">
+                <div className="nav-item">Empire state building Admission</div>
+                <div className="rating-parent">
+                  <div className="rating">
+                    <span>4.2</span>
+                    <img src={star} alt="" />
+                  </div>
+                  <div className="review">40 Review</div>
+                </div>
+                <div className="crausel-time">
+                  <div className="crausel-day">
+                    <img src={watch} alt="" />
+                    <div className="day-time">5 Days</div>
+                  </div>
+                  <div className="crausel-from">
+                    <span> From </span>
+                    <span>$320</span>{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="trip-scroll-button trip-right-button"
+            onClick={scrollRight}
+          >
+            &gt;
+          </div>
+        </div>
+      </div>
+
+      <div className="frame-parent3">
+        <div className="category-parent">
+          <div className="we-offer-best-services-parent">
+            <div className="we-offer-best">Weekend group Trip</div>
+            <div className="frame-child" />
+          </div>
+        </div>
+        <div className="wtrip-crausel">
+          <div
+            className="trip-scroll-button trip-left-button"
+            onClick={scrollLeft}
+          >
+            &lt;
+          </div>
+          <div className="wtrip-wrapper">
+            <div className="card-crausel">
+              <img className="crausel-img" src={trave9} alt="" />
+              <div className="crausel-details">
+                <div className="nav-item">Empire state building Admission</div>
+                <div className="rating-parent">
+                  <div className="rating">
+                    <span>4.2</span>
+                    <img src={star} alt="" />
+                  </div>
+                  <div className="review">40 Review</div>
+                </div>
+                <div className="crausel-time">
+                  <div className="crausel-day">
+                    <img src={watch} alt="" />
+                    <div className="day-time">5 Days</div>
+                  </div>
+                  <div className="crausel-from">
+                    <span> From </span>
+                    <span>$320</span>{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card-crausel">
+              <img className="crausel-img" src={trave5} alt="" />
+              <div className="crausel-details">
+                <div className="nav-item">Empire state building Admission</div>
+                <div className="rating-parent">
+                  <div className="rating">
+                    <span>4.2</span>
+                    <img src={star} alt="" />
+                  </div>
+                  <div className="review">40 Review</div>
+                </div>
+                <div className="crausel-time">
+                  <div className="crausel-day">
+                    <img src={watch} alt="" />
+                    <div className="day-time">5 Days</div>
+                  </div>
+                  <div className="crausel-from">
+                    <span> From </span>
+                    <span>$320</span>{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card-crausel">
+              <img className="crausel-img" src={trave6} alt="" />
+              <div className="crausel-details">
+                <div className="nav-item">Empire state building Admission</div>
+                <div className="rating-parent">
+                  <div className="rating">
+                    <span>4.2</span>
+                    <img src={star} alt="" />
+                  </div>
+                  <div className="review">40 Review</div>
+                </div>
+                <div className="crausel-time">
+                  <div className="crausel-day">
+                    <img src={watch} alt="" />
+                    <div className="day-time">5 Days</div>
+                  </div>
+                  <div className="crausel-from">
+                    <span> From </span>
+                    <span>$320</span>{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card-crausel">
+              <img className="crausel-img" src={trave7} alt="" />
+              <div className="crausel-details">
+                <div className="nav-item">Empire state building Admission</div>
+                <div className="rating-parent">
+                  <div className="rating">
+                    <span>4.2</span>
+                    <img src={star} alt="" />
+                  </div>
+                  <div className="review">40 Review</div>
+                </div>
+                <div className="crausel-time">
+                  <div className="crausel-day">
+                    <img src={watch} alt="" />
+                    <div className="day-time">5 Days</div>
+                  </div>
+                  <div className="crausel-from">
+                    <span> From </span>
+                    <span>$320</span>{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card-crausel">
+              <img className="crausel-img" src={trave8} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -305,7 +450,7 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave5} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -328,7 +473,7 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave6} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -351,7 +496,7 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave7} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -374,147 +519,7 @@ export default function Main() {
               </div>
             </div>
             <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
-              <div className="crausel-details">
-                <div className="nav-item">Empire state building Admission</div>
-                <div className="rating-parent">
-                  <div className="rating">
-                    <span>4.2</span>
-                    <img src={star} alt="" />
-                  </div>
-                  <div className="review">40 Review</div>
-                </div>
-                <div className="crausel-time">
-                  <div className="crausel-day">
-                    <img src={watch} alt="" />
-                    <div className="day-time">5 Days</div>
-                  </div>
-                  <div className="crausel-from">
-                    <span> From </span>
-                    <span>$320</span>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="trip-scroll-button trip-right-button"
-            onClick={scrollRight}
-          >
-            &gt;
-          </div>
-        </div>
-      </div>
-
-      <div className="frame-parent3">
-        <div className="category-parent">
-          <div className="we-offer-best-services-parent">
-            <div className="we-offer-best">Weekend group Trip</div>
-            <div className="frame-child" />
-          </div>
-        </div>
-        <div className="wtrip-crausel">
-          <div
-            className="trip-scroll-button trip-left-button"
-            onClick={scrollLeft}
-          >
-            &lt;
-          </div>
-          <div className="wtrip-wrapper">
-            <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
-              <div className="crausel-details">
-                <div className="nav-item">Empire state building Admission</div>
-                <div className="rating-parent">
-                  <div className="rating">
-                    <span>4.2</span>
-                    <img src={star} alt="" />
-                  </div>
-                  <div className="review">40 Review</div>
-                </div>
-                <div className="crausel-time">
-                  <div className="crausel-day">
-                    <img src={watch} alt="" />
-                    <div className="day-time">5 Days</div>
-                  </div>
-                  <div className="crausel-from">
-                    <span> From </span>
-                    <span>$320</span>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
-              <div className="crausel-details">
-                <div className="nav-item">Empire state building Admission</div>
-                <div className="rating-parent">
-                  <div className="rating">
-                    <span>4.2</span>
-                    <img src={star} alt="" />
-                  </div>
-                  <div className="review">40 Review</div>
-                </div>
-                <div className="crausel-time">
-                  <div className="crausel-day">
-                    <img src={watch} alt="" />
-                    <div className="day-time">5 Days</div>
-                  </div>
-                  <div className="crausel-from">
-                    <span> From </span>
-                    <span>$320</span>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
-              <div className="crausel-details">
-                <div className="nav-item">Empire state building Admission</div>
-                <div className="rating-parent">
-                  <div className="rating">
-                    <span>4.2</span>
-                    <img src={star} alt="" />
-                  </div>
-                  <div className="review">40 Review</div>
-                </div>
-                <div className="crausel-time">
-                  <div className="crausel-day">
-                    <img src={watch} alt="" />
-                    <div className="day-time">5 Days</div>
-                  </div>
-                  <div className="crausel-from">
-                    <span> From </span>
-                    <span>$320</span>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
-              <div className="crausel-details">
-                <div className="nav-item">Empire state building Admission</div>
-                <div className="rating-parent">
-                  <div className="rating">
-                    <span>4.2</span>
-                    <img src={star} alt="" />
-                  </div>
-                  <div className="review">40 Review</div>
-                </div>
-                <div className="crausel-time">
-                  <div className="crausel-day">
-                    <img src={watch} alt="" />
-                    <div className="day-time">5 Days</div>
-                  </div>
-                  <div className="crausel-from">
-                    <span> From </span>
-                    <span>$320</span>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card-crausel">
-              <img className="crausel-img" src={ladakh} alt="" />
+              <img className="crausel-img" src={trave8} alt="" />
               <div className="crausel-details">
                 <div className="nav-item">Empire state building Admission</div>
                 <div className="rating-parent">
@@ -566,27 +571,27 @@ export default function Main() {
               <div className="overlay-text">Kasmir Trip</div>
             </div>
             <div className="t-card-crausel">
-              <img className="t-crausel-img" src={travel} alt="" />
+              <img className="t-crausel-img" src={trave5} alt="" />
               <div className="overlay-text">Himachaldk fhasldfhsf hslf Trip</div>
             </div>
             <div className="t-card-crausel">
-              <img className="t-crausel-img" src={travel} alt="" />
+              <img className="t-crausel-img" src={trave6} alt="" />
               <div className="overlay-text">Kasmir Trip</div>
             </div>
             <div className="t-card-crausel">
-              <img className="t-crausel-img" src={travel} alt="" />
+              <img className="t-crausel-img" src={trave7} alt="" />
               <div className="overlay-text">Kasmir Trip</div>
             </div>
             <div className="t-card-crausel">
-              <img className="t-crausel-img" src={travel} alt="" />
+              <img className="t-crausel-img" src={trave8} alt="" />
               <div className="overlay-text">Kasmir Trip</div>
             </div>
             <div className="t-card-crausel">
-              <img className="t-crausel-img" src={travel} alt="" />
+              <img className="t-crausel-img" src={trave9} alt="" />
               <div className="overlay-text">Kasmir Trip</div>
             </div>
             <div className="t-card-crausel">
-              <img className="t-crausel-img" src={travel} alt="" />
+              <img className="t-crausel-img" src={ladakh} alt="" />
               <div className="overlay-text">Kasmir Trip</div>
             </div>
           </div>

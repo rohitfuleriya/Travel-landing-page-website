@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import './home.css';
 import home from '../Assets/navbar/home photo.svg';
-import travel2 from '../Assets/navbar/travel2.jpg';
-import travel3 from '../Assets/navbar/travel3.jpg';
-import travel4 from '../Assets/navbar/travel4.jpg';
+import travel5 from '../Assets/navbar/travel8.jpg';
+import travel6 from '../Assets/navbar/travel6.jpg';
+import travel7 from '../Assets/navbar/travel7.jpg';
 
 export default function Home() {
   const scrollLeft = () => {
@@ -50,19 +50,19 @@ export default function Home() {
           <img className="group-item" alt="" src={vector} /> */}
         </div>
         <div className="rectangle-parent">
-          <img className="group-child" alt="" src={travel2} />
+          <img className="group-child" alt="" src={travel5} />
           {/* <b className="slogans"> 2nd Are You Ready...</b>
           <div className="slogans1">To explore new things?</div>
           <img className="group-item" alt="" src={vector} /> */}
         </div>
         <div className="rectangle-parent">
-          <img className="group-child" alt="" src={travel3} />
+          <img className="group-child" alt="" src={travel6} />
           {/* <b className="slogans">3rd Are You Ready...</b>
           <div className="slogans1">To explore new things?</div>
           <img className="group-item" alt="" src={vector} /> */}
         </div>
         <div className="rectangle-parent">
-          <img className="group-child" alt="" src={travel4} />
+          <img className="group-child" alt="" src={travel7} />
           {/* <b className="slogans">4rth Are You Ready...</b>
           <div className="slogans1">To explore new things?</div>
           <img className="group-item" alt="" src={vector} /> */}

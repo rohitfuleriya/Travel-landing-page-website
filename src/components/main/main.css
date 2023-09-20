@@ -105,8 +105,8 @@
     gap: 15px;
     border-radius: 10px;
     background: #F7F7FF;
-    height: 340px;
-    width: 320px;
+    height: 100%;
+    width: 100%;
 }
 
 .crausel-img {
