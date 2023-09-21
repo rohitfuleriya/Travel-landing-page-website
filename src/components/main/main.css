@@ -63,9 +63,11 @@
     height: 200px;
     width: 170px;
 }
+
 .group-parent:hover {
-    transform: scale(1.1); /* Increase the size on hover */
-  }
+    transform: scale(1.1);
+    /* Increase the size on hover */
+}
 
 .safar-family-wrapper {
     color: #1E1D4C;
@@ -79,21 +81,50 @@
 
 /* -----------frame-parent2 ----------*/
 .frame-parent3 {
-    padding: 50px 84px;
+    padding: 30px 30px;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     background: #FFF;
 }
 
-.wtrip-wrapper {
+.wtrip-wrapper1 {
+    display: flex;
+    gap: 27px;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+.wtrip-wrapper2 {
+    display: flex;
+    gap: 27px;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+.wtrip-wrapper3 {
     display: flex;
     gap: 27px;
     overflow-x: auto;
     margin-top: 30px;
 }
 
-.wtrip-wrapper::-webkit-scrollbar {
+.wtrip-crausel {
+    display: flex;
+    gap: 27px;
+    overflow-x: auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.wtrip-wrapper1::-webkit-scrollbar {
+    display: none;
+}
+.wtrip-wrapper2::-webkit-scrollbar {
+    display: none;
+}
+.wtrip-wrapper3::-webkit-scrollbar {
+    display: none;
+}
+.wtrip-crausel::-webkit-scrollbar {
     display: none;
 }
 
@@ -105,13 +136,13 @@
     gap: 15px;
     border-radius: 10px;
     background: #F7F7FF;
-    height: 100%;
-    width: 100%;
+    height: 396px;
+    width: 370px;
 }
 
 .crausel-img {
-    width: 303px;
-    height: 215px;
+    width: 370px;
+    height: 254.56px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     top: 0;
@@ -211,9 +242,6 @@
     line-height: 675px;
 }
 
-.wtrip-crausel {
-    display: flex;
-}
 
 .trip-left-button,
 .trip-right-button {
@@ -255,7 +283,7 @@
 
 .t-wtrip-wrapper {
     display: flex;
-    gap: 15px;
+    gap: 19px;
     overflow-x: auto;
     margin-top: 30px;
 }
@@ -263,6 +291,7 @@
 .t-wtrip-wrapper::-webkit-scrollbar {
     display: none;
 }
+
 .t-card-crausel {
     display: flex;
     position: relative;
@@ -274,12 +303,12 @@
     border-radius: 10px;
     background: #F7F7FF;
     height: 300px;
-    width: 208px;
+    width: 225px;
 }
 
 .t-crausel-img {
-    width: 208px;
-    height: 297px;
+    width: 225px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 10px 10px;
     top: 0;
@@ -304,4 +333,8 @@
     text-transform: capitalize;
     width: 193px;
     height: 40px;
+}
+
+.weak-trip-crausel {
+    position: relative;
 }

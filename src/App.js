@@ -5,8 +5,8 @@ import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
-import Login from "./page/login/Login";
-import Signup from "./page/signup/Signup";
+// import Login from "./page/login/Login";
+// import Signup from "./page/signup/Signup";
 
 function App() {
   return (
@@ -14,18 +14,20 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/signup">
-            <Signup />
-          </Route>
+          <div className="container">
+            <Route>
+              <Home />
+              <Main />
+              <Footer />
+            </Route>
+            {/* <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/signup">
+              <Signup />
+            </Route> */}
+          </div>
         </Switch>
-        <Main />
-        <Footer />
       </Router>
     </div>
   );
