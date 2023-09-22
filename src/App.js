@@ -5,8 +5,8 @@ import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
-// import Login from "./page/login/Login";
-// import Signup from "./page/signup/Signup";
+import Login from "./page/login/Login";
+import Signup from "./page/signup/Signup";
 
 function App() {
   return (
@@ -20,12 +20,12 @@ function App() {
               <Main />
               <Footer />
             </Route>
-            {/* <Route exact path="/login">
+            <Route exact path="/login">
               <Login />
             </Route>
             <Route exact path="/signup">
               <Signup />
-            </Route> */}
+            </Route> 
           </div>
         </Switch>
       </Router>
