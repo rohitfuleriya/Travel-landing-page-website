@@ -136,12 +136,12 @@
     gap: 15px;
     border-radius: 10px;
     background: #F7F7FF;
-    height: 396px;
-    width: 370px;
+    height: 392px;
+    width: 309px;
 }
 
 .crausel-img {
-    width: 370px;
+    width: 309px;
     height: 254.56px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
@@ -302,13 +302,13 @@
     gap: 15px;
     border-radius: 10px;
     background: #F7F7FF;
-    height: 300px;
-    width: 225px;
+    height: 392px;
+    width: 309px;
 }
 
 .t-crausel-img {
-    width: 225px;
-    height: 300px;
+    width: 309px;
+    height: 254.56px;
     object-fit: cover;
     border-radius: 10px 10px 10px 10px;
     top: 0;

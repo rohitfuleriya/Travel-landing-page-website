@@ -35,9 +35,9 @@ export default function Main() {
     let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
 
     const scrollInterval = setInterval(() => {
-      if (scrollDirection === 1 && wrapper.scrollLeft >= maxScrollLeft) {
+      if (scrollDirection === 1 && wrapper.scrollLeft2 >= maxScrollLeft) {
         scrollDirection = -1;
-      } else if (scrollDirection === -1 && wrapper.scrollLeft <= 0) {
+      } else if (scrollDirection === -1 && wrapper.scrollLeft2 <= 0) {
         scrollDirection = 1;
       }
 
@@ -45,7 +45,7 @@ export default function Main() {
         left: 389 * scrollDirection, // Adjust the scroll amount as needed
         behavior: "smooth",
       });
-    }, 5000); // Adjust the interval duration as needed
+    }, 1000); // Adjust the interval duration as needed
 
     return () => {
       clearInterval(scrollInterval);
@@ -69,18 +69,18 @@ export default function Main() {
     let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
 
     const scrollInterval = setInterval(() => {
-      if (scrollDirection === 1 && wrapper.scrollLeft >= maxScrollLeft) {
+      if (scrollDirection === 1 && wrapper.scrollLeft1 >= maxScrollLeft) {
         scrollDirection = -1;
-      } else if (scrollDirection === -1 && wrapper.scrollLeft <= 0) {
+      } else if (scrollDirection === -1 && wrapper.scrollLeft1 <= 0) {
         scrollDirection = 1;
       }
       
 
       wrapper.scrollBy({
-        left: 389 * scrollDirection, // Adjust the scroll amount as needed
+        left: 309 * scrollDirection, // Adjust the scroll amount as needed
         behavior: "smooth",
       });
-    }, 4000); // Adjust the interval duration as needed
+    }, 3000); // Adjust the interval duration as needed
 
     return () => {
       clearInterval(scrollInterval);
@@ -95,7 +95,7 @@ export default function Main() {
 
   const scrollRight3 = () => {
     const wrapper = document.querySelector(".wtrip-wrapper3");
-    wrapper.scrollBy({ left: 389, behavior: "smooth" }); // Adjust the scroll amount as needed
+    wrapper.scrollBy({ left: 309, behavior: "smooth" }); // Adjust the scroll amount as needed
   };
 
   useEffect(() => {
@@ -104,17 +104,17 @@ export default function Main() {
     let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
 
     const scrollInterval = setInterval(() => {
-      if (scrollDirection === 1 && wrapper.scrollLeft >= maxScrollLeft) {
+      if (scrollDirection === 1 && wrapper.scrollLeft3 >= maxScrollLeft) {
         scrollDirection = -1;
-      } else if (scrollDirection === -1 && wrapper.scrollLeft <= 0) {
+      } else if (scrollDirection === -1 && wrapper.scrollLeft3 <= 0) {
         scrollDirection = 1;
       }
 
       wrapper.scrollBy({
-        left: 389 * scrollDirection, // Adjust the scroll amount as needed
+        left: 309 * scrollDirection, // Adjust the scroll amount as needed
         behavior: "smooth",
       });
-    }, 5000); // Adjust the interval duration as needed
+    }, 6000); // Adjust the interval duration as needed
 
     return () => {
       clearInterval(scrollInterval);
@@ -125,12 +125,12 @@ export default function Main() {
 // 4th Crausel 
   const scrollsLeft = () => {
     const wrapper = document.querySelector(".t-wtrip-wrapper");
-    wrapper.scrollBy({ left: -327.77, behavior: "smooth" }); // Adjust the scroll amount as needed
+    wrapper.scrollBy({ left: -300, behavior: "smooth" }); // Adjust the scroll amount as needed
   };
 
   const scrollsRight = () => {
     const wrapper = document.querySelector(".t-wtrip-wrapper");
-    wrapper.scrollBy({ left: 327.77, behavior: "smooth" }); // Adjust the scroll amount as needed
+    wrapper.scrollBy({ left: 300, behavior: "smooth" }); // Adjust the scroll amount as needed
   };
 
   useEffect(() => {
@@ -139,17 +139,17 @@ export default function Main() {
     let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
 
     const scrollInterval = setInterval(() => {
-      if (scrollDirection === 1 && wrapper.scrollLeft >= maxScrollLeft) {
+      if (scrollDirection === 1 && wrapper.scrollsLeft >= maxScrollLeft) {
         scrollDirection = -1;
-      } else if (scrollDirection === -1 && wrapper.scrollLeft <= 0) {
+      } else if (scrollDirection === -1 && wrapper.scrollsLeft <= 0) {
         scrollDirection = 1;
       }
 
       wrapper.scrollBy({
-        left: 327.77 * scrollDirection, // Adjust the scroll amount as needed
+        left: 300 * scrollDirection, // Adjust the scroll amount as needed
         behavior: "smooth",
       });
-    }, 5000); // Adjust the interval duration as needed
+    }, 4500); // Adjust the interval duration as needed
 
     return () => {
       clearInterval(scrollInterval);
