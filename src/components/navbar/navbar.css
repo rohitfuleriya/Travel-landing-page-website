@@ -70,10 +70,10 @@
   position: fixed;
   background: #fff;
   align-items: center;
-  text-align: start;
+  text-align: flex-flex-start;
   width: 85px;
   list-style-type: none;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 17px;
   border-radius: 0px 0px 8px 8px;
   transition: 0.3s;
@@ -166,7 +166,7 @@
     pointer-events: none;
     transform: translate(-10px);
     transition: opacity 0.3s, transform 0.6s;
-    text-align: start;
+    text-align: flex-start;
     width: 600px;
   }
 
@@ -250,10 +250,10 @@
     position: fixed;
     background: #fff;
     align-items: center;
-    text-align: start;
+    text-align: flex-flex-start;
     width: 85px;
     list-style-type: none;
-    justify-content: start;
+    justify-content: flex-flex-start;
     padding: 17px;
     border-radius: 0px 0px 8px 8px;
     transition: 0.3s;
