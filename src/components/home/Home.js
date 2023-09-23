@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="home">
+    <section id="home" className="home">
       <div className="home-child">
       <div className="home-wrapper">
         <button className="scroll-button left-button" onClick={scrollLeft}>

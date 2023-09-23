@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    margin-top: 30px;
 }
 
 .category-parent .category {
@@ -282,15 +283,12 @@
 /*  Himachal crausel  */
 
 .t-wtrip-wrapper {
+    flex-wrap: wrap;
     display: flex;
-    gap: 19px;
-    overflow-x: auto;
-    margin-top: 30px;
+    gap: 25px;
+    padding: 15px;
 }
 
-.t-wtrip-wrapper::-webkit-scrollbar {
-    display: none;
-}
 
 .t-card-crausel {
     display: flex;
@@ -302,13 +300,13 @@
     gap: 15px;
     border-radius: 10px;
     background: #F7F7FF;
-    height: 392px;
-    width: 309px;
+    width: 270px;
+    height: 180px;
 }
 
 .t-crausel-img {
-    width: 309px;
-    height: 392px;
+    width: 280;
+    height: 186px;
     object-fit: cover;
     border-radius: 10px 10px 10px 10px;
     top: 0;
@@ -316,11 +314,16 @@
     padding: 0;
     margin-right: 0px;
     margin-top: 0px;
-}
+    filter: blur(0.5px) brightness(0.5);
 
+}
+.t-crausel-img:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
 .overlay-text {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
@@ -333,8 +336,106 @@
     text-transform: capitalize;
     width: 193px;
     height: 40px;
+    cursor: pointer;
 }
 
 .weak-trip-crausel {
     position: relative;
 }
+
+
+/*  testimonils */
+/* Testimonial Carousel Container */
+.testimonial-carousel {
+    background-color: #f8f8f8; /* Set the background color as needed */
+    padding: 50px 0; /* Adjust padding to control spacing */
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card {
+    background-color: #ffffff; /* Card background color */
+    border: 1px solid #eaeaea; /* Optional: Add a border */
+    border-radius: 10px; /* Optional: Add border radius */
+    padding: 20px; /* Adjust padding to control spacing inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+  }
+  
+  /* Testimonial Description Box */
+  .testi-desc-box {
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  /* Testimonial Author Content */
+  .author-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Author Image */
+  .author-img {
+    width: 50px; /* Adjust the image width */
+    height: 50px; /* Adjust the image height */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Hide image overflow */
+    margin-right: 15px; /* Adjust margin to control spacing */
+  }
+  
+  .author-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire circle */
+  }
+  
+  /* Author Title */
+  .author__title {
+    font-size: 18px; /* Adjust font size */
+    margin: 0;
+  }
+  
+  /* Author Meta */
+  .author__meta {
+    font-size: 14px; /* Adjust font size */
+    color: #999; /* Meta text color */
+  }
+  
+  /* Ratings */
+  .ratings {
+    margin-top: 10px; /* Adjust margin to control spacing */
+  }
+  
+  .ratings i {
+    font-size: 20px; /* Adjust font size */
+    color: #ffc107; /* Star color */
+    margin-right: 5px; /* Adjust margin to control spacing between stars */
+  }
+  
+  /* Owl Carousel Navigation Arrows */
+  .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin to control spacing */
+  }
+  
+  .owl-prev,
+  .owl-next {
+    font-size: 24px; /* Adjust font size */
+    color: #333; /* Arrow color */
+    margin: 0 10px; /* Adjust margin to control spacing between arrows */
+    cursor: pointer;
+  }
+  
+  /* Owl Carousel Dots */
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin to control spacing */
+  }
+  
+  .owl-dot {
+    width: 10px; /* Adjust dot width */
+    height: 10px; /* Adjust dot height */
+    border-radius: 50%; /* Make dots circular */
+    background-color: #333; /* Dot color */
+    margin: 0 5px; /* Adjust margin to control spacing between dots */
+    cursor: pointer;
+  }
+  

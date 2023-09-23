@@ -16,6 +16,7 @@
   list-style: none;
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 
 .menu-button {
@@ -35,7 +36,6 @@
 
 .navbar-item a {
   text-decoration: none;
-  color: #212832;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -51,28 +51,57 @@
 }
 
 
-.login-button,
+
 .signup-button {
-  width: 90px;
-  padding: 8px 15px;
+  width: 130px;
+  padding: 10px 15px;
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  background: #FFF;
+  background: #3D3DFF;
   border: 1.3px solid #3D3DFF;
-  color: #3D3DFF;
+  color: #fff;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 
-.signup-button {
-  background-color: #3D3DFF;
-  color: #FFF;
-  margin-left: 40px;
+.trip-itmes-drop {
+  /* margin-top: 10px; */
+  position: fixed;
+  background: #fff;
+  align-items: center;
+  text-align: start;
+  width: 85px;
+  list-style-type: none;
+  justify-content: start;
+  padding: 17px;
+  border-radius: 0px 0px 8px 8px;
+  transition: 0.3s;
+  font-size: 14px;
+  margin-left: -35px;
+  display: block;
+  display: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: opacity 0.10s ease;
+  color: #212832;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.trip-itmes-drop li {
+  margin-bottom: 10px;
+}
+
+.navbar-item-dropdown:hover .trip-itmes-drop {
+  display: block;
+  opacity: 1;
 }
 
 /* Media query for mobile devices (max-width: 767px) */
-@media (max-width: 700px) {
+@media (max-width: 667px) {
   .navbar {
     display: flex;
     align-items: center;
@@ -80,16 +109,18 @@
     position: fixed;
     padding: 13px 2px;
   }
+
   .home-wrapper {
     position: relative;
     display: flex;
     margin-top: 53px;
-}
-.rectangle-parent .group-child {
-  height: 350px;
-  width: auto;
-  object-fit: cover;
-}
+  }
+
+  .rectangle-parent .group-child {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+  }
 
   .dropdown {
     position: relative;
@@ -119,7 +150,7 @@
     gap: 20px;
     padding: 10px;
     justify-content: center;
-}
+  }
 
   .menu-button:hover .dropdwon-content {
     display: block;
@@ -213,5 +244,39 @@
   .footer-logo img {
     height: 40px;
     width: 70px;
+  }
+  .trip-itmes-drop {
+    /* margin-top: 10px; */
+    position: fixed;
+    background: #fff;
+    align-items: center;
+    text-align: start;
+    width: 85px;
+    list-style-type: none;
+    justify-content: start;
+    padding: 17px;
+    border-radius: 0px 0px 8px 8px;
+    transition: 0.3s;
+    font-size: 14px;
+    margin-left: -35px;
+    display: flex;
+    /* display: none; */
+    z-index: 1;
+    cursor: pointer;
+    transition: opacity 0.10s ease;
+    color: #212832;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .trip-itmes-drop li {
+    margin-right: 10px;
+  }
+  
+  .navbar-item-dropdown:hover .trip-itmes-drop {
+    display: block;
+    opacity: 1;
   }
 }
