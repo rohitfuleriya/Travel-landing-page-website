@@ -3,6 +3,7 @@ import "./navbar.css";
 import logo from "../Assets/navbar/logo.svg";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import { AiOutlineDown } from "react-icons/ai"
 
 
 const Navbar = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
                   Home
                 </ScrollLink>
               </li>
-              <li className="navbar-item" onClick={toggleMobileMenu}>
+              <li className="navbar-item" >
                 <ScrollLink
                   activeClass="active"
                   to="why"
@@ -66,9 +67,8 @@ const Navbar = () => {
               </li>
               <li
                 className="navbar-item-dropdown navbar-item"
-                onClick={toggleMobileMenu}
               >
-                Trips
+                Trips <AiOutlineDown/>
                 <ol className="trip-itmes-drop">
                   <li>
                     <ScrollLink

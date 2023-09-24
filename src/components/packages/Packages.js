@@ -10,6 +10,10 @@ import { AiOutlineUser } from "react-icons/ai";
 import { BsAirplane } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import { BsPencil } from "react-icons/bs";
+import { LiaDotCircleSolid } from "react-icons/lia";
+import { AiOutlineCheck } from "react-icons/ai";
+import { LiaTimesSolid } from "react-icons/lia";
+
 import photo1 from "../Assets/navbar/ladakh.jpg";
 import photo2 from "../Assets/navbar/kharachi.jpg";
 import photo3 from "../Assets/navbar/travel7.jpg";
@@ -18,6 +22,19 @@ import photo5 from "../Assets/navbar/travel4.jpg";
 import photo6 from "../Assets/navbar/travel6.jpg";
 
 function Packages() {
+  // itinarary dropdown and up
+  const [openSection, setOpenSection] = useState(null);
+
+  const handleItemClick = (section) => {
+    if (section === openSection) {
+      // Clicking on an already open section, so close it
+      setOpenSection(null);
+    } else {
+      // Clicking on a closed section, so open it
+      setOpenSection(section);
+    }
+  };
+  // itinarary dropdown and up
   // inquiry form data
   const [formData, setFormData] = useState({
     name: "",
@@ -196,95 +213,187 @@ function Packages() {
                     <div className="tour-details">
                       <div className="duration-tt">
                         <h3>Highlights</h3>
-                        <p>
-                          Per consequat adolescens ex, cu nibh commune
-                          temporibus vim, ad sumo viris eloquentiam sed. Mea
-                          appareat omittantur eloquentiam ad, nam ei quas
-                          oportere democritum. Prima causae admodum id est, ei
-                          timeam inimicus sed. Sit an meis aliquam, cetero
-                          inermis vel ut. An sit illum euismod facilisis,
-                          tamquam vulputate pertinacia eum at. Cum et probo
-                          menandri. Officiis consulatu pro et, ne sea sale
-                          invidunt, sed ut sint blandit efficiendi. Atomorum
-                          explicari eu qui, est enim quaerendum te. Quo harum
-                          viris id. Per ne quando dolore evertitur, pro ad cibo
-                          commune.
-                        </p>
+                        <div className="main-hightlight">
+                          <div className="main-hightlight1">
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Dolorem mediocritatem</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Mea appareat</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Prima causae</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Singulis indoctum</p>
+                            </div>
+                          </div>
+                          <div className="main-hightlight1">
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Timeam inimicus</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Oportere democritum</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Cetero inermis</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaDotCircleSolid className="hight-dot-circle" />
+                              <p>Pertinacia eum</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="tour-details">
-                      <div className="duration-tt">
-                        <h3>Included</h3>
-                        <p>
-                          Per consequat adolescens ex, cu nibh commune
-                          temporibus vim, ad sumo viris eloquentiam sed. Mea
-                          appareat omittantur eloquentiam ad, nam ei quas
-                          oportere democritum. Prima causae admodum id est, ei
-                          timeam inimicus sed. Sit an meis aliquam, cetero
-                          inermis vel ut. An sit illum euismod facilisis,
-                          tamquam vulputate pertinacia eum at. Cum et probo
-                          menandri. Officiis consulatu pro et, ne sea sale
-                          invidunt, sed ut sint blandit efficiendi. Atomorum
-                          explicari eu qui, est enim quaerendum te. Quo harum
-                          viris id. Per ne quando dolore evertitur, pro ad cibo
-                          commune.
-                        </p>
-                      </div>
-                      <div className="duration-tt">
-                        <h3>Not Included</h3>
-                        <p>
-                          Per consequat adolescens ex, cu nibh commune
-                          temporibus vim, ad sumo viris eloquentiam sed. Mea
-                          appareat omittantur eloquentiam ad, nam ei quas
-                          oportere democritum. Prima causae admodum id est, ei
-                          timeam inimicus sed. Sit an meis aliquam, cetero
-                          inermis vel ut. An sit illum euismod facilisis,
-                          tamquam vulputate pertinacia eum at. Cum et probo
-                          menandri. Officiis consulatu pro et, ne sea sale
-                          invidunt, sed ut sint blandit efficiendi. Atomorum
-                          explicari eu qui, est enim quaerendum te. Quo harum
-                          viris id. Per ne quando dolore evertitur, pro ad cibo
-                          commune.
-                        </p>
+                      <div className="tour-details-EI">
+                        <div className="duration-tt">
+                          <h3>Included</h3>
+                          <div className="main-hightlight1">
+                            <div className="highlight">
+                              <AiOutlineCheck className="hight-dot-circle" />
+                              <p>Dolorem mediocritatem</p>
+                            </div>
+                            <div className="highlight">
+                              <AiOutlineCheck className="hight-dot-circle" />
+                              <p>Mea appareat</p>
+                            </div>
+                            <div className="highlight">
+                              <AiOutlineCheck className="hight-dot-circle" />
+                              <p>Prima causae</p>
+                            </div>
+                            <div className="highlight">
+                              <AiOutlineCheck className="hight-dot-circle" />
+                              <p>Singulis indoctum</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="duration-tt">
+                          <h3>Not Included</h3>
+                          <div className="main-hightlight2">
+                            <div className="highlight">
+                              <LiaTimesSolid className="hight-dot-circle" />
+                              <p>Dolorem mediocritatem</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaTimesSolid className="hight-dot-circle" />
+                              <p>Mea appareat</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaTimesSolid className="hight-dot-circle" />
+                              <p>Prima causae</p>
+                            </div>
+                            <div className="highlight">
+                              <LiaTimesSolid className="hight-dot-circle" />
+                              <p>Singulis indoctum</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    {/* itinarary open close */}
                     <div className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Itinerary</h3>
                           <div className="itinary-details">
-                            <h2>Day 1</h2>
-                            <p>
-                              Per consequat adolescens ex, cu nibh commune
-                              temporibus vim, ad sumo viris eloquentiam sed. Mea
-                              appareat omittantur eloquentiam ad, nam ei quas
-                            </p>
+                            <span onClick={() => handleItemClick(1)}>
+                              <h1>
+                                Day 01 - Linfen - Historical place in Beijing
+                              </h1>
+                            </span>
+                            {openSection === 1 && (
+                              <div className="itinarary-details">
+                                {/* <div className="itinarary-img">
+                                  <img src={photo6} alt="" />
+                                </div> */}
+                                <p>
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas
+                                </p>
+                              </div>
+                            )}
+                          </div>
+
+                          <div className="itinary-details">
+                            <span onClick={() => handleItemClick(2)}>
+                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                            </span>
+                            {openSection === 2 && (
+                              <div className="itinarary-details">
+                                {/* <div className="itinarary-img">
+                                  <img src={photo5} alt="" />
+                                </div> */}
+                                <p>
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas oportere democritum. Prima causae admodum
+                                  id est, ei timeam inimicus sed. Sit an meis
+                                  aliquam, cetero inermis vel ut. An sit illum
+                                  euismod facilisis Nullam id dolor id nibh
+                                  ultricies vehicula ut id elit.
+                                </p>
+                              </div>
+                            )}
                           </div>
                           <div className="itinary-details">
-                            <h2>Day 2</h2>
-                            <p>
-                              Per consequat adolescens ex, cu nibh commune
-                              temporibus vim, ad sumo viris eloquentiam sed. Mea
-                              appareat omittantur eloquentiam ad, nam ei quas
-                            </p>
+                            <span onClick={() => handleItemClick(3)}>
+                              <h1>Day 03 - Jinan to New york</h1>
+                            </span>
+                            {openSection === 3 && (
+                              <div className="itinarary-details">
+                                <div className="itinarary-img">
+                                  <img src={photo2} alt="" />
+                                </div>
+                                <p>
+                                Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                              </div>
+                            )}
                           </div>
                           <div className="itinary-details">
-                            <h2>Day 3</h2>
-                            <p>
-                              Per consequat adolescens ex, cu nibh commune
-                              temporibus vim, ad sumo viris eloquentiam sed. Mea
-                              appareat omittantur eloquentiam ad, nam ei quas
-                            </p>
+                            <span onClick={() => handleItemClick(4)}>
+                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                            </span>
+                            {openSection === 4 && (
+                              <div className="itinarary-details">
+                                <div className="itinarary-img">
+                                  <img src={photo1} alt="" />
+                                </div>
+                                <p>
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas oportere democritum. Prima causae admodum
+                                  id est, ei timeam inimicus sed. Sit an meis
+                                  aliquam, cetero inermis vel ut. An sit illum
+                                  euismod facilisis Nullam id dolor id nibh
+                                  ultricies vehicula ut id elit.
+                                </p>
+                              </div>
+                            )}
                           </div>
+                          {/* Add more sections with similar structure */}
                         </div>
                       </div>
                     </div>
+                    {/* itinarary open close */}
 
                     <div className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Photos</h3>
-                          <div className="itinary-details">
+                          <div className="itinary-detail">
                             <div className="all-photoes-trip">
                               <img src={photo1} alt="" />
                               <img src={photo2} alt="" />
@@ -299,47 +408,106 @@ function Packages() {
                         </div>
                       </div>
                     </div>
-
+                    {/* FAQ */}
                     <div className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
-                          <h3>FAQ</h3>
+                          <h3>FQA</h3>
                           <div className="itinary-details">
-                            <h2>FAQ 1</h2>
-                            <p>
-                              Per consequat adolescens ex, cu nibh commune
-                              temporibus vim, ad sumo viris eloquentiam sed. Mea
-                              appareat omittantur eloquentiam ad, nam ei quas
-                            </p>
+                            <span onClick={() => handleItemClick(1)}>
+                              <h1>
+                              I'm a solo traveller, is there a single supplement?
+                              </h1>
+                            </span>
+                            {openSection === 1 && (
+                              <div className="itinarary-details">
+                                {/* <div className="itinarary-img">
+                                  <img src={photo6} alt="" />
+                                </div> */}
+                                <p>
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas
+                                </p>
+                              </div>
+                            )}
+                          </div>
+
+                          <div className="itinary-details">
+                            <span onClick={() => handleItemClick(2)}>
+                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                            </span>
+                            {openSection === 2 && (
+                              <div className="itinarary-details">
+                                {/* <div className="itinarary-img">
+                                  <img src={photo5} alt="" />
+                                </div> */}
+                                <p>
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas oportere democritum. Prima causae admodum
+                                  id est, ei timeam inimicus sed. Sit an meis
+                                  aliquam, cetero inermis vel ut. An sit illum
+                                  euismod facilisis Nullam id dolor id nibh
+                                  ultricies vehicula ut id elit.
+                                </p>
+                              </div>
+                            )}
                           </div>
                           <div className="itinary-details">
-                            <h2>FAQ 2</h2>
-                            <p>
-                              Per consequat adolescens ex, cu nibh commune
-                              temporibus vim, ad sumo viris eloquentiam sed. Mea
-                              appareat omittantur eloquentiam ad, nam ei quas
-                            </p>
+                            <span onClick={() => handleItemClick(3)}>
+                              <h1>Day 03 - Jinan to New york</h1>
+                            </span>
+                            {openSection === 3 && (
+                              <div className="itinarary-details">
+                                {/* <div className="itinarary-img">
+                                  <img src={photo2} alt="" />
+                                </div> */}
+                                <p>
+                                Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                              </div>
+                            )}
                           </div>
                           <div className="itinary-details">
-                            <h2>FAQ 3</h2>
-                            <p>
-                              Per consequat adolescens ex, cu nibh commune
-                              temporibus vim, ad sumo viris eloquentiam sed. Mea
-                              appareat omittantur eloquentiam ad, nam ei quas
-                            </p>
+                            <span onClick={() => handleItemClick(4)}>
+                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                            </span>
+                            {openSection === 4 && (
+                              <div className="itinarary-details">
+                                {/* <div className="itinarary-img">
+                                  <img src={photo1} alt="" />
+                                </div> */}
+                                <p>
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas oportere democritum. Prima causae admodum
+                                  id est, ei timeam inimicus sed. Sit an meis
+                                  aliquam, cetero inermis vel ut. An sit illum
+                                  euismod facilisis Nullam id dolor id nibh
+                                  ultricies vehicula ut id elit.
+                                </p>
+                              </div>
+                            )}
                           </div>
+                          {/* Add more sections with similar structure */}
                         </div>
                       </div>
                     </div>
+                    {/* FAQ */}
+
                     <div className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Locations</h3>
                           <div className="itinary-details">
                             <div className="all-photoes-trip">
-                              <img src="https://maps.app.goo.gl/KdftEpXNvoArAVUE8" alt="" />
-                              
-                              
+                              <img
+                                src="https://maps.app.goo.gl/KdftEpXNvoArAVUE8"
+                                alt=""
+                              />
                             </div>
                           </div>
                         </div>

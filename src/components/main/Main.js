@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./main.css";
 
 import user from "../Assets/navbar/user.svg";
@@ -16,106 +16,108 @@ import { Link } from "react-router-dom";
 
 export default function Main() {
   // 1st crausel
-  const scrollLeft2 = () => {
-    const wrapper = document.querySelector(".wtrip-wrapper2");
-    wrapper.scrollBy({ left: -380, behavior: "smooth" }); // Adjust the scroll amount as needed
-  };
+  // const scrollLeft2 = () => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper2");
+  //   wrapper.scrollBy({ left: -380, behavior: "smooth" }); // Adjust the scroll amount as needed
+  // };
 
-  const scrollRight2 = () => {
-    const wrapper = document.querySelector(".wtrip-wrapper2");
-    wrapper.scrollBy({ left: 380, behavior: "smooth" }); // Adjust the scroll amount as needed
-  };
+  // const scrollRight2 = () => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper2");
+  //   wrapper.scrollBy({ left: 380, behavior: "smooth" }); // Adjust the scroll amount as needed
+  // };
 
-  useEffect(() => {
-    const wrapper = document.querySelector(".wtrip-wrapper2");
-    const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
-    let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
+  // useEffect(() => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper2");
+  //   const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+  //   let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
 
-    const scrollInterval = setInterval(() => {
-      if (scrollDirection === 1 && wrapper.scrollLeft2 >= maxScrollLeft) {
-        scrollDirection = -1;
-      } else if (scrollDirection === -1 && wrapper.scrollLeft2 <= 0) {
-        scrollDirection = 1;
-      }
+  //   const scrollInterval = setInterval(() => {
+  //     if (scrollDirection === 1 && wrapper.scrollLeft >= maxScrollLeft) {
+  //       scrollDirection = -1;
+  //     } else if (scrollDirection === -1 && wrapper.scrollLeft <= 0) {
+  //       scrollDirection = 1;
+  //     }
 
-      wrapper.scrollBy({
-        left: 380 * scrollDirection, // Adjust the scroll amount as needed
-        behavior: "smooth",
-      });
-    }, 1000); // Adjust the interval duration as needed
+  //     wrapper.scrollBy({
+  //       left: 380 * scrollDirection, // Adjust the scroll amount as needed
+  //       behavior: "smooth",
+  //     });
+  //   }, 1000); // Adjust the interval duration as needed
 
-    return () => {
-      clearInterval(scrollInterval);
-    };
-  }, []);
+    
+
+  //   return () => {
+  //     clearInterval(scrollInterval);
+  //   };
+  // }, []);
 
   // 2st crausel
-  const scrollLeft1 = () => {
-    const wrapper = document.querySelector(".wtrip-wrapper1");
-    wrapper.scrollBy({ left: -389, behavior: "smooth" }); // Adjust the scroll amount as needed
-  };
+  // const scrollLeft1 = () => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper1");
+  //   wrapper.scrollBy({ left: -389, behavior: "smooth" }); // Adjust the scroll amount as needed
+  // };
 
-  const scrollRight1 = () => {
-    const wrapper = document.querySelector(".wtrip-wrapper1");
-    wrapper.scrollBy({ left: 389, behavior: "smooth" }); // Adjust the scroll amount as needed
-  };
+  // const scrollRight1 = () => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper1");
+  //   wrapper.scrollBy({ left: 389, behavior: "smooth" }); // Adjust the scroll amount as needed
+  // };
 
-  useEffect(() => {
-    const wrapper = document.querySelector(".wtrip-wrapper1");
-    const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
-    let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
+  // useEffect(() => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper1");
+  //   const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+  //   let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
 
-    const scrollInterval = setInterval(() => {
-      if (scrollDirection === 1 && wrapper.scrollLeft1 >= maxScrollLeft) {
-        scrollDirection = -1;
-      } else if (scrollDirection === -1 && wrapper.scrollLeft1 <= 0) {
-        scrollDirection = 1;
-      }
+  //   const scrollInterval = setInterval(() => {
+  //     if (scrollDirection === 1 && wrapper.scrollLeft1 >= maxScrollLeft) {
+  //       scrollDirection = -1;
+  //     } else if (scrollDirection === -1 && wrapper.scrollLeft1 <= 0) {
+  //       scrollDirection = 1;
+  //     }
 
-      wrapper.scrollBy({
-        left: 309 * scrollDirection, // Adjust the scroll amount as needed
-        behavior: "smooth",
-      });
-    }, 3000); // Adjust the interval duration as needed
+  //     wrapper.scrollBy({
+  //       left: 309 * scrollDirection, // Adjust the scroll amount as needed
+  //       behavior: "smooth",
+  //     });
+  //   }, 3000); // Adjust the interval duration as needed
 
-    return () => {
-      clearInterval(scrollInterval);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(scrollInterval);
+  //   };
+  // }, []);
 
   // 3st crausel
-  const scrollLeft3 = () => {
-    const wrapper = document.querySelector(".wtrip-wrapper3");
-    wrapper.scrollBy({ left: -389, behavior: "smooth" }); // Adjust the scroll amount as needed
-  };
+  // const scrollLeft3 = () => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper3");
+  //   wrapper.scrollBy({ left: -389, behavior: "smooth" }); // Adjust the scroll amount as needed
+  // };
 
-  const scrollRight3 = () => {
-    const wrapper = document.querySelector(".wtrip-wrapper3");
-    wrapper.scrollBy({ left: 309, behavior: "smooth" }); // Adjust the scroll amount as needed
-  };
+  // const scrollRight3 = () => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper3");
+  //   wrapper.scrollBy({ left: 309, behavior: "smooth" }); // Adjust the scroll amount as needed
+  // };
 
-  useEffect(() => {
-    const wrapper = document.querySelector(".wtrip-wrapper3");
-    const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
-    let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
+  // useEffect(() => {
+  //   const wrapper = document.querySelector(".wtrip-wrapper3");
+  //   const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+  //   let scrollDirection = 1; // 1 for scrolling right, -1 for scrolling left
 
-    const scrollInterval = setInterval(() => {
-      if (scrollDirection === 1 && wrapper.scrollLeft3 >= maxScrollLeft) {
-        scrollDirection = -1;
-      } else if (scrollDirection === -1 && wrapper.scrollLeft3 <= 0) {
-        scrollDirection = 1;
-      }
+  //   const scrollInterval = setInterval(() => {
+  //     if (scrollDirection === 1 && wrapper.scrollLeft3 >= maxScrollLeft) {
+  //       scrollDirection = -1;
+  //     } else if (scrollDirection === -1 && wrapper.scrollLeft3 <= 0) {
+  //       scrollDirection = 1;
+  //     }
 
-      wrapper.scrollBy({
-        left: 309 * scrollDirection, // Adjust the scroll amount as needed
-        behavior: "smooth",
-      });
-    }, 6000); // Adjust the interval duration as needed
+  //     wrapper.scrollBy({
+  //       left: 309 * scrollDirection, // Adjust the scroll amount as needed
+  //       behavior: "smooth",
+  //     });
+  //   }, 6000); // Adjust the interval duration as needed
 
-    return () => {
-      clearInterval(scrollInterval);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(scrollInterval);
+  //   };
+  // }, []);
 
   // 4th Crausel
   // const scrollsLeft = () => {
@@ -200,12 +202,11 @@ export default function Main() {
               </div>
             </div>
             <div className="weak-trip-crausel">
-              <div
+              {/* <div
                 className="trip-scroll-button left-button"
-                onClick={scrollLeft1}
               >
                 &lt;
-              </div>
+              </div> */}
               <div className="wtrip-crausel">
                 <div className="wtrip-wrapper1">
                   <div className="card-crausel">
@@ -338,12 +339,11 @@ export default function Main() {
                   </div>
                 </div>
               </div>
-              <div
+              {/* <div
                 className="trip-scroll-button right-button"
-                onClick={scrollRight1}
               >
                 &gt;
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -356,12 +356,11 @@ export default function Main() {
               </div>
             </div>
             <div className="weak-trip-crausel">
-              <div
+              {/* <div
                 className="trip-scroll-button left-button"
-                onClick={scrollLeft3}
               >
                 &lt;
-              </div>
+              </div> */}
               <div className="wtrip-crausel">
                 <div className="wtrip-wrapper3">
                   <div className="card-crausel">
@@ -492,12 +491,11 @@ export default function Main() {
                   </div>
                 </div>
               </div>
-              <div
+              {/* <div
                 className="trip-scroll-button right-button"
-                onClick={scrollRight3}
               >
                 &gt;
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -510,12 +508,11 @@ export default function Main() {
               </div>
             </div>
             <div className="weak-trip-crausel">
-              <div
+              {/* <div
                 className="trip-scroll-button left-button"
-                onClick={scrollLeft3}
               >
                 &lt;
-              </div>
+              </div> */}
               <div className="wtrip-crausel">
                 <div className="wtrip-wrapper3">
                   <div className="card-crausel">
@@ -646,12 +643,11 @@ export default function Main() {
                   </div>
                 </div>
               </div>
-              <div
+              {/* <div
                 className="trip-scroll-button right-button"
-                onClick={scrollRight3}
               >
                 &gt;
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -664,12 +660,12 @@ export default function Main() {
               </div>
             </div>
             <div className="weak-trip-crausel">
-              <div
+              {/* <div
                 className="trip-scroll-button left-button"
                 onClick={scrollLeft2}
               >
                 &lt;
-              </div>
+              </div> */}
               <div className="wtrip-crausel">
                 <div className="wtrip-wrapper2">
                   <div className="card-crausel">
@@ -800,12 +796,12 @@ export default function Main() {
                   </div>
                 </div>
               </div>
-              <div
+              {/* <div
                 className="trip-scroll-button right-button"
                 onClick={scrollRight2}
               >
                 &gt;
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -818,12 +814,12 @@ export default function Main() {
               </div>
             </div>
             <div className="weak-trip-crausel">
-              <div
+              {/* <div
                 className="trip-scroll-button left-button"
                 onClick={scrollLeft2}
               >
                 &lt;
-              </div>
+              </div> */}
               <div className="wtrip-crausel">
                 <div className="wtrip-wrapper2">
                   <div className="card-crausel">
@@ -954,12 +950,12 @@ export default function Main() {
                   </div>
                 </div>
               </div>
-              <div
+              {/* <div
                 className="trip-scroll-button right-button"
                 onClick={scrollRight2}
               >
                 &gt;
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

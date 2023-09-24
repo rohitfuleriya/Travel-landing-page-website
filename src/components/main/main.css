@@ -138,11 +138,11 @@
     border-radius: 10px;
     background: #F7F7FF;
     height: 392px;
-    width: 309px;
+    width: 275px;
 }
 
 .crausel-img {
-    width: 309px;
+    width: 275px;
     height: 254.56px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
@@ -154,8 +154,8 @@
 }
 
 .crausel-details {
-    width: 282px;
-    padding: 10px;
+    width: 260px;
+    padding: 8px;
 }
 
 .crausel-from,

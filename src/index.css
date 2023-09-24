@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a Smooth Transition to All Elements */
+* {
+  transition: all 0.1s ease;
+}
+
+/* Improve Font Rendering for Smooth Text */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Set a Fallback Font to Improve Text Rendering */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Use Smooth Scrolling for Anchors */
+a {
+  scroll-behavior: smooth;
+}
+
+/* Apply Hover Effects Smoothly */
+a:hover {
+  opacity: 0.8;
+}
+
+/* Add a Hover Transition Effect */
+.button {
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* Apply a Subtle Box Shadow for Depth */
+.box {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Use CSS Transitions for Smooth State Changes */
+.toggle-button {
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #2980b9;
+}
+
+/* Use CSS Transitions for Smooth Navigation Menus */
+.nav-menu {
+  display: none;
+  transition: transform 0.1s ease;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+}
+
+/* Use CSS Animations for Loading Spinners */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

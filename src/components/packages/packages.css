@@ -255,9 +255,103 @@ button[type="submit"]:hover {
     background: #fff;
 }
 
-/* inquiry form css */
+/* Highlights */
+.tour-details .duration-tt p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Roboto", sans-serif;
+    color: #5d646d;
+}
 
-.all-photoes-trip  {
+/* .tour-details .duration-tt p::after {
+    content: "..."; 
+    display: inline; 
+    font-weight: bold; 
+    color: #f00; 
+  } */
+.main-hightlight {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 30px 0;
+    justify-content: space-between;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.highlight .hight-dot-circle {
+    width: 20px;
+    height: 20px;
+    color: #007bff;
+    border-radius: 50%;
+}
+
+.duration-tt .main-hightlight1,
+.duration-tt .main-hightlight2 {
+    padding: 20px;
+}
+
+.tour-details-EI {
+    display: flex;
+    gap: 260px;
+}
+
+.main-hightlight1 .highlight .hight-dot-circle {
+    color: #20c997;
+}
+
+.main-hightlight2 .highlight .hight-dot-circle {
+    color: #dc3545;
+}
+
+/* Highlights */
+
+
+/* Itinarary */
+.tour-details .tour-itinary .duration-tt .itinary-details {
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 0px solid;
+    border-radius: 7px;
+    width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.itinary-details span h1 {
+    color: black;
+    font-size: 18px;
+    padding: 10px 0px 10px 2px;
+    cursor: pointer;
+}
+
+.itinarary-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.itinarary-details .itinarary-img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.tour-details .tour-itinary .duration-tt .itinary-detail {
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 0px solid;
+    border-radius: 7px;
+}
+/* Itinarary */
+
+.all-photoes-trip {
     display: flex;
     height: auto;
     width: 740px;
@@ -265,10 +359,12 @@ button[type="submit"]:hover {
     overflow: auto;
     gap: 10px;
 }
-.all-photoes-trip::-webkit-scrollbar{
+
+.all-photoes-trip::-webkit-scrollbar {
     display: none;
 }
-.all-photoes-trip  img {
+
+.all-photoes-trip img {
     object-fit: cover;
     width: 740px;
 }

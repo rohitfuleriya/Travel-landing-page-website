@@ -8,7 +8,7 @@
 
 .rectangle-parent .group-child {
   height: 350px;
-  /* width: 1240.33px; */
+  width: 1265.33px;
   object-fit: cover;
 }
 
@@ -46,26 +46,13 @@
   display: flex;
   margin-top: 70px;
 }
-.child-wrapper {
-  display: flex;
-  overflow-x: auto;
-  /* gap: 5px; */
-}
 
-.child-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* scrollbar css */
 .child-wrapper {
   padding: 0px;
-  /* margin-left: 20px;
-  margin-right: 20px; */
   display: flex;
   overflow-x: auto;
+  gap: 10px;
   scroll-behavior: smooth;
-  /* Add smooth scrolling behavior */
 }
 
 
@@ -130,7 +117,7 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .carousel-item {
+  .group-child {
     width: 200px;
     height: 300px;
   }
@@ -142,7 +129,7 @@
 
 /* Styles for smaller screens (e.g., mobile phones) */
 @media (max-width: 480px) {
-  .carousel-item {
+  .group-child {
     width: 160px;
     height: 240px;
   }
