@@ -1,0 +1,274 @@
+.container {
+    margin-top: 70px;
+}
+
+.destination {
+    background-image: url('../Assets//navbar/travel7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 350px;
+
+}
+
+.btn-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translate(20px, 280px);
+    width: 360px;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+.destination-container {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+
+/* single-content css  */
+.tour-detail {
+    padding-bottom: 90px;
+}
+
+.single-content-nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.single-content-nav ul li {
+    list-style: none;
+}
+
+.single-content-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.single-content-nav ul li a.active {
+    color: #287dfa;
+}
+
+/* .single-content-nav ul li a.active::before{
+    background-color: #287dfa;
+    transform: translateX(-50%) scale(1);
+} */
+
+.tour-details {
+    padding: 20px 30px 0px 30px;
+    background: #fff;
+}
+
+.tour-details h3 {
+    margin: 0;
+}
+
+.loc-rat {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.loc-rat p {
+    margin: 0;
+}
+
+.loc-rat p .ratings {
+    height: 30px;
+    width: 20px;
+    border-radius: 4px;
+    background: #ffc107;
+    padding: 2px 12px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.tour-details .time {
+    background: #dbdbff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 8px;
+    color: #287dfa;
+}
+
+.tour-details .time:hover {
+    background: #287dfa;
+    color: #fff;
+}
+
+.duration-t {
+    width: 200px;
+}
+
+.duration-t h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.duration-t p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.wrapper-class {
+    background: #fff;
+
+}
+
+.all-package-details {
+    margin: 20px 0 40px 0;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+}
+
+.all-package-details .tour-details {
+    display: flex;
+    gap: 20px;
+}
+
+/*  Description */
+
+.description .tour-details .duration-t h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.description .tour-details .duration-t p {
+    width: 100%;
+}
+
+.tour-details .duration-tt {
+    width: 100%;
+}
+
+/* inquiry form css */
+/* Add your custom styles to style.css or your preferred CSS file */
+.inquiry-form1,
+.inquiry-form2,
+.inquiry-form3,
+.inquiry-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    margin-bottom: 200px;
+}
+
+.inquiry-form1 {
+    margin-bottom: 100px;
+}
+
+.inquiry-form2,
+.inquiry-form3 {
+    height: 200px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.tour-details-inquiry {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+}
+
+.tour-detail .container {
+    display: flex;
+}
+
+.wrapper-class {
+    flex: 3;
+}
+
+.inquiry-form {
+    flex: 1;
+}
+
+.form-group1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    gap: 6px;
+    padding: 5px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+/* inquiry form css */
+
+.all-photoes-trip  {
+    display: flex;
+    height: auto;
+    width: 740px;
+    height: 400px;
+    overflow: auto;
+    gap: 10px;
+}
+.all-photoes-trip::-webkit-scrollbar{
+    display: none;
+}
+.all-photoes-trip  img {
+    object-fit: cover;
+    width: 740px;
+}

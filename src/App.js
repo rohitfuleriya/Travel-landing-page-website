@@ -5,27 +5,30 @@ import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
-import Login from "./page/login/Login";
+// import Login from "./page/login/Login";
 import Signup from "./page/signup/Signup";
+import Packages from "./components/packages/Packages";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Route>
+          <Navbar />
+        </Route>
         <Switch>
           <div className="container">
-            <Route>
+            <Route exact path="/">
               <Home />
               <Main />
               <Footer />
             </Route>
-            <Route exact path="/login">
-              <Login />
+            <Route exact path="/packages">
+              <Packages />
             </Route>
             <Route exact path="/signup">
               <Signup />
-            </Route> 
+            </Route>
           </div>
         </Switch>
       </Router>

@@ -70,7 +70,7 @@
   position: fixed;
   background: #fff;
   align-items: center;
-  text-align: flex-flex-start;
+  text-align: flex-start;
   width: 85px;
   list-style-type: none;
   justify-content: flex-start;
@@ -100,6 +100,9 @@
   opacity: 1;
 }
 
+.whatshapp-link {
+  color: white;
+}
 /* Media query for mobile devices (max-width: 767px) */
 @media (max-width: 667px) {
   .navbar {
@@ -278,5 +281,8 @@
   .navbar-item-dropdown:hover .trip-itmes-drop {
     display: block;
     opacity: 1;
+  }
+  .whatshapp-link {
+    color: white;
   }
 }

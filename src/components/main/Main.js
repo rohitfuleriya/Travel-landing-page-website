@@ -12,7 +12,7 @@ import trave5 from "../Assets/navbar/travel5.jpg";
 import trave6 from "../Assets/navbar/travel6.jpg";
 import trave7 from "../Assets/navbar/travel7.jpg";
 import trave8 from "../Assets/navbar/travel8.jpg";
-
+import { Link } from "react-router-dom";
 
 export default function Main() {
   // 1st crausel
@@ -212,7 +212,9 @@ export default function Main() {
                     <img className="crausel-img" src={ladakh} alt="" />
                     <div className="crausel-details">
                       <div className="nav-item">
-                        Empire state building Admission
+                        <Link to={"/packages"}>
+                          Empire state building Admission
+                        </Link>
                       </div>
                       <div className="rating-parent">
                         <div className="rating">
