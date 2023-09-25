@@ -107,6 +107,18 @@
     overflow-x: auto;
     margin-top: 30px;
 }
+.wtrip-wrapper4 {
+    display: flex;
+    gap: 27px;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+.wtrip-wrapper5 {
+    display: flex;
+    gap: 27px;
+    overflow-x: auto;
+    margin-top: 30px;
+}
 
 .wtrip-crausel {
     display: flex;
@@ -123,6 +135,12 @@
     display: none;
 }
 .wtrip-wrapper3::-webkit-scrollbar {
+    display: none;
+}
+.wtrip-wrapper4::-webkit-scrollbar {
+    display: none;
+}
+.wtrip-wrapper5::-webkit-scrollbar {
     display: none;
 }
 .wtrip-crausel::-webkit-scrollbar {
@@ -264,7 +282,20 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
 }
-
+.crausal-right-button,
+.crausal-left-button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-25px -50px);
+    margin-left: -25px;
+    font-size: 22px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.crausal-left-button:hover, .crausal-right-button:hover {
+    background-color: #3D3DFF;
+    color: white;
+}
 .trip-left-button:hover,
 .trip-right-button:hover {
     background-color: #ddd;

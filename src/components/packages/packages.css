@@ -1,7 +1,3 @@
-.container {
-    margin-top: 70px;
-}
-
 .destination {
     background-image: url('../Assets//navbar/travel7.jpg');
     background-position: center;
@@ -19,7 +15,9 @@
     transform: translate(20px, 280px);
     width: 360px;
 }
-
+.btn-box .signup-button {
+    width: 170px;
+}
 .fa-solid {
     margin-right: 10px;
 }
@@ -34,15 +32,16 @@
 
 
 /* single-content css  */
-.tour-detail {
-    padding-bottom: 90px;
-}
 
+.tour-detail .single-content{
+    padding: 30px 30px 0px 30px;
+}
 .single-content-nav ul {
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: flex-start;
+    padding: 0 30px 0 30px;
 }
 
 .single-content-nav ul li {
@@ -65,12 +64,13 @@
 } */
 
 .tour-details {
-    padding: 20px 30px 0px 30px;
+    padding: 10px 20px 20px 30px;
     background: #fff;
 }
 
 .tour-details h3 {
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .loc-rat {
@@ -96,8 +96,8 @@
 
 .tour-details .time {
     background: #dbdbff;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     padding: 8px;
     color: #287dfa;
@@ -109,7 +109,7 @@
 }
 
 .duration-t {
-    width: 200px;
+    width: 160px;
 }
 
 .duration-t h3 {
@@ -129,15 +129,13 @@
 }
 
 .all-package-details {
-    margin: 20px 0 40px 0;
     flex-wrap: wrap;
     display: flex;
-    padding: 20px 0px 20px 0px;
 }
 
 .all-package-details .tour-details {
-    display: flex;
     gap: 20px;
+    display: flex;
 }
 
 /*  Description */
@@ -170,6 +168,9 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 500px;
     margin-bottom: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3a3838;
 }
 
 .inquiry-form1 {
@@ -235,6 +236,7 @@ button[type="submit"]:hover {
 
 .tour-detail .container {
     display: flex;
+    margin-top: 20px;
 }
 
 .wrapper-class {
@@ -276,7 +278,12 @@ button[type="submit"]:hover {
     margin: 30px 0 30px 0;
     justify-content: space-between;
 }
-
+.main-hightlight3 {
+    margin-right: 80px;
+}
+.main-hightlight2 {
+    padding: 20px;
+}
 .highlight {
     display: flex;
     align-items: center;
@@ -292,16 +299,17 @@ button[type="submit"]:hover {
 }
 
 .duration-tt .main-hightlight1,
-.duration-tt .main-hightlight2 {
+.duration-tt .main-hightlight3 {
     padding: 20px;
 }
 
 .tour-details-EI {
     display: flex;
-    gap: 260px;
+    gap: 270px;
 }
 
-.main-hightlight1 .highlight .hight-dot-circle {
+.main-hightlight1 .highlight .hight-dot-circle,
+.main-hightlight3 .highlight .hight-dot-circle {
     color: #20c997;
 }
 
@@ -313,6 +321,10 @@ button[type="submit"]:hover {
 
 
 /* Itinarary */
+.itinary-img {
+    width: 800px;
+    height: 350px;
+}
 .tour-details .tour-itinary .duration-tt .itinary-details {
     gap: 20px;
     padding: 10px;
@@ -322,7 +334,10 @@ button[type="submit"]:hover {
     width: 800px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-
+.packages-images {
+    width: 800px;
+    height: 500px;
+}
 .itinary-details span h1 {
     color: black;
     font-size: 18px;
@@ -342,6 +357,7 @@ button[type="submit"]:hover {
     width: 100px;
     border-radius: 50%;
 }
+
 .tour-details .tour-itinary .duration-tt .itinary-detail {
     gap: 20px;
     padding: 10px;
@@ -349,15 +365,42 @@ button[type="submit"]:hover {
     border: 0px solid;
     border-radius: 7px;
 }
+
+.itinary-details span {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+.itinary-details span .itinarary-down-icon {
+    transform: rotateZ(-180deg);
+}
 /* Itinarary */
 
+
+/* Location  */
+
+.duration-tt .Location-map-embedd {
+    margin-top: 30px;
+}
+
+/* Reviews  */
+.duration-tt .google-reviews {
+    margin-top: 30px;
+}
+
+
+
+
+
+
 .all-photoes-trip {
+    gap: 5px;
+    width: 790px;
     display: flex;
-    height: auto;
-    width: 740px;
-    height: 400px;
     overflow: auto;
-    gap: 10px;
+    height: 500px;
+    border-radius: 8px;
 }
 
 .all-photoes-trip::-webkit-scrollbar {
@@ -366,5 +409,6 @@ button[type="submit"]:hover {
 
 .all-photoes-trip img {
     object-fit: cover;
-    width: 740px;
+    width: 790px;
+    height: 500px; 
 }

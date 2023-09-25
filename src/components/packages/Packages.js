@@ -13,6 +13,7 @@ import { BsPencil } from "react-icons/bs";
 import { LiaDotCircleSolid } from "react-icons/lia";
 import { AiOutlineCheck } from "react-icons/ai";
 import { LiaTimesSolid } from "react-icons/lia";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 import photo1 from "../Assets/navbar/ladakh.jpg";
 import photo2 from "../Assets/navbar/kharachi.jpg";
@@ -24,7 +25,12 @@ import photo6 from "../Assets/navbar/travel6.jpg";
 function Packages() {
   // itinarary dropdown and up
   const [openSection, setOpenSection] = useState(null);
+  const [isButtonOpen, setisButtonOpen] = useState(false);
 
+  // Function to toggle the mobile menu
+  const toggleButtonMenu = () => {
+    setisButtonOpen(!isButtonOpen);
+  };
   const handleItemClick = (section) => {
     if (section === openSection) {
       // Clicking on an already open section, so close it
@@ -33,6 +39,7 @@ function Packages() {
       // Clicking on a closed section, so open it
       setOpenSection(section);
     }
+    toggleButtonMenu();
   };
   // itinarary dropdown and up
   // inquiry form data
@@ -54,7 +61,12 @@ function Packages() {
     // Handle form submission logic here
     console.log(formData);
   };
+
   // inquiry form data
+
+  // Google Map Embed
+
+  // Google Map Embed
   return (
     <div>
       <div className="container">
@@ -232,7 +244,7 @@ function Packages() {
                               <p>Singulis indoctum</p>
                             </div>
                           </div>
-                          <div className="main-hightlight1">
+                          <div className="main-hightlight3">
                             <div className="highlight">
                               <LiaDotCircleSolid className="hight-dot-circle" />
                               <p>Timeam inimicus</p>
@@ -306,15 +318,27 @@ function Packages() {
                           <h3>Itinerary</h3>
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(1)}>
-                              <h1>
+                              <h1
+                                className={`dropdown-content ${
+                                  isButtonOpen ? "show" : ""
+                                }`}
+                              >
                                 Day 01 - Linfen - Historical place in Beijing
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
+                                )}
                               </h1>
                             </span>
                             {openSection === 1 && (
                               <div className="itinarary-details">
-                                {/* <div className="itinarary-img">
+                                <div className="itinarary-img">
                                   <img src={photo6} alt="" />
-                                </div> */}
+                                </div>
                                 <p>
                                   Per consequat adolescens ex, cu nibh commune
                                   temporibus vim, ad sumo viris eloquentiam sed.
@@ -327,58 +351,142 @@ function Packages() {
                               </div>
                             )}
                           </div>
-
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(2)}>
-                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                              <h1
+                                className={`dropdown-content ${
+                                  isButtonOpen ? "show" : ""
+                                }`}
+                              >
+                                Day 01 - Linfen - Historical place in Beijing
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
+                                )}
+                              </h1>
                             </span>
                             {openSection === 2 && (
                               <div className="itinarary-details">
-                                {/* <div className="itinarary-img">
-                                  <img src={photo5} alt="" />
-                                </div> */}
+                                <div className="itinarary-img">
+                                  <img src={photo6} alt="" />
+                                </div>
                                 <p>
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
                                   Mea appareat omittantur eloquentiam ad, nam ei
-                                  quas oportere democritum. Prima causae admodum
-                                  id est, ei timeam inimicus sed. Sit an meis
-                                  aliquam, cetero inermis vel ut. An sit illum
-                                  euismod facilisis Nullam id dolor id nibh
-                                  ultricies vehicula ut id elit.
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas
                                 </p>
                               </div>
                             )}
                           </div>
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(3)}>
-                              <h1>Day 03 - Jinan to New york</h1>
+                              <h1
+                                className={`dropdown-content ${
+                                  isButtonOpen ? "show" : ""
+                                }`}
+                              >
+                                Day 01 - Linfen - Historical place in Beijing
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
+                                )}
+                              </h1>
                             </span>
                             {openSection === 3 && (
                               <div className="itinarary-details">
                                 <div className="itinarary-img">
-                                  <img src={photo2} alt="" />
+                                  <img src={photo6} alt="" />
                                 </div>
                                 <p>
-                                Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas
                                 </p>
                               </div>
                             )}
                           </div>
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(4)}>
-                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                              <h1
+                                className={`dropdown-content ${
+                                  isButtonOpen ? "show" : ""
+                                }`}
+                              >
+                                Day 01 - Linfen - Historical place in Beijing
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
+                                )}
+                              </h1>
                             </span>
                             {openSection === 4 && (
                               <div className="itinarary-details">
                                 <div className="itinarary-img">
-                                  <img src={photo1} alt="" />
+                                  <img src={photo6} alt="" />
                                 </div>
                                 <p>
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
                                   Mea appareat omittantur eloquentiam ad, nam ei
-                                  quas oportere democritum. Prima causae admodum
-                                  id est, ei timeam inimicus sed. Sit an meis
-                                  aliquam, cetero inermis vel ut. An sit illum
-                                  euismod facilisis Nullam id dolor id nibh
-                                  ultricies vehicula ut id elit.
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas
+                                </p>
+                              </div>
+                            )}
+                          </div>
+                          <div className="itinary-details">
+                            <span onClick={() => handleItemClick(5)}>
+                              <h1
+                                className={`dropdown-content ${
+                                  isButtonOpen ? "show" : ""
+                                }`}
+                              >
+                                Day 01 - Linfen - Historical place in Beijing
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
+                                )}
+                              </h1>
+                            </span>
+                            {openSection === 5 && (
+                              <div className="itinarary-details">
+                                <div className="itinarary-img">
+                                  <img src={photo6} alt="" />
+                                </div>
+                                <p>
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  Per consequat adolescens ex, cu nibh commune
+                                  temporibus vim, ad sumo viris eloquentiam sed.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas
                                 </p>
                               </div>
                             )}
@@ -387,13 +495,13 @@ function Packages() {
                         </div>
                       </div>
                     </div>
-                    {/* itinarary open close */}
+                    {/* Phot0 */}
 
                     <div className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Photos</h3>
-                          <div className="itinary-detail">
+                          <div className="packages-images">
                             <div className="all-photoes-trip">
                               <img src={photo1} alt="" />
                               <img src={photo2} alt="" />
@@ -412,11 +520,24 @@ function Packages() {
                     <div className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
-                          <h3>FQA</h3>
-                          <div className="itinary-details">
+                          <h3>FAQ</h3>
+                          <div className=" itinary-details">
                             <span onClick={() => handleItemClick(1)}>
-                              <h1>
-                              I'm a solo traveller, is there a single supplement?
+                              <h1
+                                className={`dropdown-content ${
+                                  isButtonOpen ? "show" : ""
+                                }`}
+                              >
+                                I'm a solo traveller, is there a single
+                                supplement?
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronUp />
+                                ) : (
+                                  <FaChevronDown />
+                                )}
                               </h1>
                             </span>
                             {openSection === 1 && (
@@ -439,7 +560,17 @@ function Packages() {
 
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(2)}>
-                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                              <h1>
+                                Should I book pre/post tour accommodation?
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronUp />
+                                ) : (
+                                  <FaChevronDown />
+                                )}
+                              </h1>
                             </span>
                             {openSection === 2 && (
                               <div className="itinarary-details">
@@ -459,7 +590,15 @@ function Packages() {
                           </div>
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(3)}>
-                              <h1>Day 03 - Jinan to New york</h1>
+                              <h1>What is cancellation policy?</h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronUp />
+                                ) : (
+                                  <FaChevronDown />
+                                )}
+                              </h1>
                             </span>
                             {openSection === 3 && (
                               <div className="itinarary-details">
@@ -467,14 +606,30 @@ function Packages() {
                                   <img src={photo2} alt="" />
                                 </div> */}
                                 <p>
-                                Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                  Mea appareat omittantur eloquentiam ad, nam ei
+                                  quas oportere democritum. Prima causae admodum
+                                  id est, ei timeam inimicus sed. Sit an meis
+                                  aliquam, cetero inermis vel ut. An sit illum
+                                  euismod facilisis Nullam id dolor id nibh
+                                  ultricies vehicula ut id elit.
                                 </p>
                               </div>
                             )}
                           </div>
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(4)}>
-                              <h1>Day 02 - Beijing - Temple of Heaven</h1>
+                              <h1>
+                                Which currency is most widely accepted on this
+                                tour?
+                              </h1>
+                              <h1 className="itinarary-down-icon">
+                                {" "}
+                                {isButtonOpen ? (
+                                  <FaChevronUp />
+                                ) : (
+                                  <FaChevronDown />
+                                )}
+                              </h1>
                             </span>
                             {openSection === 4 && (
                               <div className="itinarary-details">
@@ -496,19 +651,35 @@ function Packages() {
                         </div>
                       </div>
                     </div>
-                    {/* FAQ */}
+
+                    {/* Location */}
 
                     <div className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Locations</h3>
-                          <div className="itinary-details">
-                            <div className="all-photoes-trip">
-                              <img
-                                src="https://maps.app.goo.gl/KdftEpXNvoArAVUE8"
-                                alt=""
-                              />
-                            </div>
+                          <div className="Location-map-embedd">
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3931189378973!2d75.89545980938406!3d22.750787726332767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396303de00fb79f3%3A0x88f3749ff8cb3bdf!2sAwaara%20vibes%20-%20A%20Complete%20Travel%20Solution%20%7C%20Travel%20Agency%20Indore%20%7C%20Online%20Travel%20Booking!5e0!3m2!1sen!2sin!4v1695638221486!5m2!1sen!2sin"
+                              width="800"
+                              height="450"
+                              // style="border:0;"
+                              allowfullscreen=""
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Rewiew */}
+                    <div className="tour-details">
+                      <div className="tour-itinary">
+                        <div className="duration-tt">
+                          <h3>Reviews</h3>
+                          <div className="google-reviews">
+                            <div class="elfsight-app-c9945f6e-02df-4de5-9a80-80c26205b036"></div>
                           </div>
                         </div>
                       </div>
