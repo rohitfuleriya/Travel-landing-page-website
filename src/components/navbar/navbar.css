@@ -1,3 +1,4 @@
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -184,6 +185,7 @@
     flex-wrap: wrap;
     padding: 10px;
     align-items: center;
+    justify-content: space-between;
   }
 
   .group-parent {
@@ -262,6 +264,7 @@
   .whatshapp-link {
     color: white;
   }
+   
 }
 
 @media (max-width: 576px) {
@@ -343,6 +346,7 @@
     flex-wrap: wrap;
     padding: 10px;
     align-items: center;
+    justify-content: space-between;
   }
 
   .group-parent {
@@ -489,6 +493,7 @@
     flex-wrap: wrap;
     padding: 10px;
     align-items: center;
+    justify-content: space-between;
   }
 
   .safar-family-wrapper {
@@ -562,7 +567,7 @@
     text-decoration: none;
     display: block;
     margin: 0;
-}
+ }
 
   .trip-itmes-drop {
     display: none;

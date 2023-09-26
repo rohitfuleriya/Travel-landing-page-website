@@ -62,11 +62,10 @@ function Packages() {
     console.log(formData);
   };
 
-  // inquiry form data
+//  2nd navbar postion fixed 
 
-  // Google Map Embed
+//  2nd navbar postion fixed 
 
-  // Google Map Embed
   return (
     <div>
       <div className="container">
@@ -98,6 +97,10 @@ function Packages() {
                 <li>
                   <a
                     data-scroll="description"
+                    spy={true}
+                    smooth={true}
+                    offset={-70} // Offset to adjust for the fixed navbar
+                    duration={500}
                     href="#description"
                     className="scroll-link"
                   >
@@ -146,7 +149,7 @@ function Packages() {
           </div>
           <div className="container">
             <div className="tour-details-inquiry">
-              <div className="wrapper-class">
+              <div id="description" className="wrapper-class">
                 <div className="tour-details">
                   <h3>3 Days Tour: the Great Wall of China</h3>
                   <div className="loc-rat">
@@ -157,7 +160,7 @@ function Packages() {
                     </p>
                   </div>
                 </div>
-                <div className="all-package-details">
+                <div className="all-package-details1">
                   <div className="tour-details">
                     <BiTimeFive className="time" />
                     <div className="duration-t">
@@ -201,7 +204,7 @@ function Packages() {
                     </div>
                   </div>
                 </div>
-                <div className="all-package-details">
+                <div className="all-package-details2">
                   <div className="description">
                     <div className="tour-details">
                       <div className="duration-tt">
@@ -312,7 +315,7 @@ function Packages() {
                       </div>
                     </div>
                     {/* itinarary open close */}
-                    <div className="tour-details">
+                    <div id="itinerary" className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Itinerary</h3>
@@ -521,43 +524,6 @@ function Packages() {
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>FAQ</h3>
-                          <div className=" itinary-details">
-                            <span onClick={() => handleItemClick(1)}>
-                              <h1
-                                className={`dropdown-content ${
-                                  isButtonOpen ? "show" : ""
-                                }`}
-                              >
-                                I'm a solo traveller, is there a single
-                                supplement?
-                              </h1>
-                              <h1 className="itinarary-down-icon">
-                                {" "}
-                                {isButtonOpen ? (
-                                  <FaChevronUp />
-                                ) : (
-                                  <FaChevronDown />
-                                )}
-                              </h1>
-                            </span>
-                            {openSection === 1 && (
-                              <div className="itinarary-details">
-                                {/* <div className="itinarary-img">
-                                  <img src={photo6} alt="" />
-                                </div> */}
-                                <p>
-                                  Per consequat adolescens ex, cu nibh commune
-                                  temporibus vim, ad sumo viris eloquentiam sed.
-                                  Mea appareat omittantur eloquentiam ad, nam ei
-                                  Per consequat adolescens ex, cu nibh commune
-                                  temporibus vim, ad sumo viris eloquentiam sed.
-                                  Mea appareat omittantur eloquentiam ad, nam ei
-                                  quas
-                                </p>
-                              </div>
-                            )}
-                          </div>
-
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(2)}>
                               <h1>
@@ -661,8 +627,8 @@ function Packages() {
                           <div className="Location-map-embedd">
                             <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3931189378973!2d75.89545980938406!3d22.750787726332767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396303de00fb79f3%3A0x88f3749ff8cb3bdf!2sAwaara%20vibes%20-%20A%20Complete%20Travel%20Solution%20%7C%20Travel%20Agency%20Indore%20%7C%20Online%20Travel%20Booking!5e0!3m2!1sen!2sin!4v1695638221486!5m2!1sen!2sin"
-                              width="800"
-                              height="450"
+                              width="100%"
+                              height="400px"
                               // style="border:0;"
                               allowfullscreen=""
                               loading="lazy"
