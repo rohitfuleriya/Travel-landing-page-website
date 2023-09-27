@@ -12,8 +12,14 @@ import { TfiEmail } from "react-icons/tfi";
 import { BsPencil } from "react-icons/bs";
 import { LiaDotCircleSolid } from "react-icons/lia";
 import { AiOutlineCheck } from "react-icons/ai";
-import { LiaTimesSolid } from "react-icons/lia";
+import { LiaTimesSolid, LiaDollarSignSolid } from "react-icons/lia";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { MdOutlineKeyboardVoice } from "react-icons/md";
+import { BiLike } from "react-icons/bi";
+import { PiNotepadThin } from "react-icons/pi";
+import { IoCallOutline } from "react-icons/io5";
+import { AiOutlineMail } from "react-icons/ai";
+import { IoMdStar } from "react-icons/io";
 
 import photo1 from "../Assets/navbar/ladakh.jpg";
 import photo2 from "../Assets/navbar/kharachi.jpg";
@@ -32,6 +38,8 @@ function Packages() {
     setisButtonOpen(!isButtonOpen);
   };
   const handleItemClick = (section) => {
+    let shouldToggleMenu = true;
+  
     if (section === openSection) {
       // Clicking on an already open section, so close it
       setOpenSection(null);
@@ -39,7 +47,10 @@ function Packages() {
       // Clicking on a closed section, so open it
       setOpenSection(section);
     }
-    toggleButtonMenu();
+  
+    if (shouldToggleMenu) {
+      toggleButtonMenu();
+    }
   };
   // itinarary dropdown and up
   // inquiry form data
@@ -62,9 +73,9 @@ function Packages() {
     console.log(formData);
   };
 
-//  2nd navbar postion fixed 
+  //  2nd navbar postion fixed
 
-//  2nd navbar postion fixed 
+  //  2nd navbar postion fixed
 
   return (
     <div>
@@ -525,20 +536,20 @@ function Packages() {
                         <div className="duration-tt">
                           <h3>FAQ</h3>
                           <div className="itinary-details">
-                            <span onClick={() => handleItemClick(2)}>
+                            <span onClick={() => handleItemClick(5)}>
                               <h1>
                                 Should I book pre/post tour accommodation?
                               </h1>
                               <h1 className="itinarary-down-icon">
                                 {" "}
                                 {isButtonOpen ? (
-                                  <FaChevronUp />
-                                ) : (
                                   <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
                                 )}
                               </h1>
                             </span>
-                            {openSection === 2 && (
+                            {openSection === 5 && (
                               <div className="itinarary-details">
                                 {/* <div className="itinarary-img">
                                   <img src={photo5} alt="" />
@@ -555,18 +566,18 @@ function Packages() {
                             )}
                           </div>
                           <div className="itinary-details">
-                            <span onClick={() => handleItemClick(3)}>
+                            <span onClick={() => handleItemClick(6)}>
                               <h1>What is cancellation policy?</h1>
                               <h1 className="itinarary-down-icon">
                                 {" "}
                                 {isButtonOpen ? (
-                                  <FaChevronUp />
-                                ) : (
                                   <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
                                 )}
                               </h1>
                             </span>
-                            {openSection === 3 && (
+                            {openSection === 6 && (
                               <div className="itinarary-details">
                                 {/* <div className="itinarary-img">
                                   <img src={photo2} alt="" />
@@ -583,7 +594,7 @@ function Packages() {
                             )}
                           </div>
                           <div className="itinary-details">
-                            <span onClick={() => handleItemClick(4)}>
+                            <span onClick={() => handleItemClick(7)}>
                               <h1>
                                 Which currency is most widely accepted on this
                                 tour?
@@ -591,13 +602,13 @@ function Packages() {
                               <h1 className="itinarary-down-icon">
                                 {" "}
                                 {isButtonOpen ? (
-                                  <FaChevronUp />
-                                ) : (
                                   <FaChevronDown />
+                                ) : (
+                                  <FaChevronUp />
                                 )}
                               </h1>
                             </span>
-                            {openSection === 4 && (
+                            {openSection === 7 && (
                               <div className="itinarary-details">
                                 {/* <div className="itinarary-img">
                                   <img src={photo1} alt="" />
@@ -713,39 +724,78 @@ function Packages() {
                         I agree with Terms of Service and Privacy Statement
                       </label>
                     </div>
-                    <button type="submit">Submit Enquiry</button>
+                    <button type="submit" className="inquiry-form3-organized-button" >Submit Enquiry</button>
                   </form>
                 </div>
                 <div className="inquiry-form1">
                   <h2>Why Book With Us?</h2>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
-                  <h4>No-hassle best price guarantee</h4>
+                  <div className="packages-why">
+                    <div className="packages-why-book">
+                      <LiaDollarSignSolid className="packages-why-book-log" />
+                      <p>No-hassle best price guarantee</p>
+                    </div>
+                    <hr />
+                    <div className="packages-why-book">
+                      <MdOutlineKeyboardVoice className="packages-why-book-log" />
+                      <p>No-hassle best price guarantee</p>
+                    </div>
+                    <hr />
+                    <div className="packages-why-book">
+                      <BiLike className="packages-why-book-log" />
+                      <p>No-hassle best price guarantee</p>
+                    </div>
+                    <hr />
+                    <div className="packages-why-book">
+                      <PiNotepadThin className="packages-why-book-log" />
+                      <p>No-hassle best price guarantee</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="inquiry-form2">
                   <h2>Get a Question?</h2>
-                  <p>
-                    Do not hesitate to give us a call. We are an expert team and
-                    we are happy to talk to you.
-                  </p>
-                  <span>+ 61 23 8093 3400</span>
-                  <p>info@trizen.com</p>
+                  <div className="side-inquiry-form2">
+                    <p>
+                      Do not hesitate to give us a call. We are an expert team
+                      and we are happy to talk to you.
+                    </p>
+                    <div className="packages-why-book">
+                      <IoCallOutline className="packages-why-book-log" />
+                      <p>
+                        <strong>+91 </strong>9039208951
+                      </p>
+                    </div>
+                    <hr />
+                    <div className="packages-why-book">
+                      <AiOutlineMail className="packages-why-book-log" />
+                      <p>inforavi.gmail.com</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="inquiry-form3">
                   <h2>Organized by</h2>
-                  <p>
-                    Do not hesitate to give us a call. We are an expert team and
-                    we are happy to talk to you.
-                  </p>
-                  <span>+ 61 23 8093 3400</span>
-                  <p>info@trizen.com</p>
+                  <div className="inquiry-form3-organized">
+                    <img src={photo1} alt="" />
+                    <div className="inquiry-form3-organized-details">
+                      <span>
+                        <h3>bookingkarotravelagency</h3>
+                        <p className="member">Member Since 2010</p>
+                      </span>
+                      <span className="inquiry-form3-organized-details-rating">
+                        <div className="inquiry-from3-rating">
+                          <IoMdStar className="inquiry-from3-rating-color" />
+                          <IoMdStar className="inquiry-from3-rating-color" />
+                          <IoMdStar className="inquiry-from3-rating-color" />
+                          <IoMdStar className="inquiry-from3-rating-color" />
+                          <IoMdStar className="inquiry-from3-rating-color1" />
+                        </div>
+                        <p>305 Reviews</p>
+                      </span>
+                      <button className="inquiry-form3-organized-button">
+                        {" "}
+                        Aske Question
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

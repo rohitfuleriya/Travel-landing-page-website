@@ -1,25 +1,28 @@
 .navbar.hide-navbar {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
-  }
-  
-  /* Style for the "single-content-nav" when it becomes fixed */
-  .single-content-nav.fixed-nav {
+}
+
+/* Style for the "single-content-nav" when it becomes fixed */
+.single-content-nav.fixed-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff; /* Set the background color you desire */
+    background-color: #fff;
+    /* Set the background color you desire */
     z-index: 999;
     /* Your styles for the fixed navigation bar */
-  }
+}
 
-  
+
 
 /* Adjust the height based on your requirements */
 .single-content-nav {
-    top: 70px; /* Set the desired distance from the top of the viewport */
-    height: 50px; /* Set the desired height */
+    top: 70px;
+    /* Set the desired distance from the top of the viewport */
+    height: 50px;
+    /* Set the desired height */
 }
 
 .destination {
@@ -217,17 +220,22 @@
 
 .inquiry-form1 {
     margin-bottom: 100px;
+    height: auto;
 }
 
 .inquiry-form2,
 .inquiry-form3 {
-    height: 200px;
+    height: auto;
     margin-bottom: 100px;
 }
 
-h2 {
-    font-size: 1.5rem;
+.inquiry-form1 h2,
+.inquiry-form2 h2,
+.inquiry-form3 h2,
+.inquiry-form h2 {
+    font-size: 1.2rem;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .form-group {
@@ -254,7 +262,7 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-button[type="submit"] {
+/* button[type="submit"] {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -267,7 +275,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #0056b3;
-}
+} */
 
 
 .tour-details-inquiry {
@@ -394,16 +402,16 @@ button[type="submit"]:hover {
 }
 
 .itinarary-details {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 20px;
     transition: max-height 0.5s ease-in-out;
 }
 
 .itinarary-details .itinarary-img img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .tour-details .tour-itinary .duration-tt .itinary-detail {
@@ -461,6 +469,114 @@ button[type="submit"]:hover {
     object-fit: cover;
     width: 790px;
     height: 500px;
+}
+
+/* Why Book Css */
+.packages-why {
+    display: grid;
+    gap: 18px;
+}
+
+.packages-why hr {
+    font-size: 10px;
+}
+
+.packages-why-book {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.packages-why-book-log {
+    width: 30px;
+    height: 30px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+.packages-why-book:hover .packages-why-book-log {
+    background: #fff;
+    color: #007bff;
+
+}
+
+/* inquiry-form */
+.inquiry-form {
+    height: auto;
+}
+
+/* Inquiery-from 2 css */
+.side-inquiry-form2 {
+    height: auto;
+    display: grid;
+    gap: 15px;
+}
+
+/* Inquiery-from 3 css */
+.inquiry-form3 {
+    height: auto;
+}
+
+.inquiry-form3-organized img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.inquiry-form3-organized {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.inquiry-from3-rating-color {
+    width: 20px;
+    height: 20px;
+    color: #f9b851;
+}
+
+.inquiry-form3-organized-details-rating {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inquiry-from3-rating-color1 {
+    width: 20px;
+    height: 20px;
+}
+
+.inquiry-form3-organized-button {
+    width: auto;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #fff;
+    border: 1.3px solid #3D3DFF;
+    color: #3D3DFF;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.inquiry-form3-organized-button:hover {
+    width: auto;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #3D3DFF;
+    border: 1.3px solid #3D3DFF;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 960px) {

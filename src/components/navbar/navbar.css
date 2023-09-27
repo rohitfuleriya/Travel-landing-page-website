@@ -54,16 +54,28 @@
 
 
 .signup-button {
-  width: 130px;
-  padding: 10px 15px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 7px;
-  background: #3D3DFF;
-  border: 1.3px solid #3D3DFF;
-  color: #fff;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  width: auto;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #fff;
+    /* border: 1.3px solid #3D3DFF; */
+    color: #3D3DFF;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.signup-button:hover {
+  width: auto;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #3D3DFF;
+    /* border: 1.3px solid #3D3DFF; */
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 .trip-itmes-drop {
@@ -101,9 +113,7 @@
   opacity: 1;
 }
 
-.whatshapp-link {
-  color: white;
-}
+
 
 /* Media query for mobile devices (max-width: 767px) */
 @media (max-width: 667px) {
@@ -261,10 +271,6 @@
     opacity: 1;
   }
 
-  .whatshapp-link {
-    color: white;
-  }
-   
 }
 
 @media (max-width: 576px) {
