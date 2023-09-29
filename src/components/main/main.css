@@ -70,6 +70,7 @@
     /* Increase the size on hover */
 }
 
+
 .safar-family-wrapper {
     color: #1E1D4C;
     text-align: center;
@@ -157,6 +158,10 @@
     background: #F7F7FF;
     height: 392px;
     width: 275px;
+    cursor: pointer;
+}
+.card-crausel:hover {
+    transform: scale(0.9);
 }
 
 .crausel-img {
@@ -188,7 +193,9 @@
     font-weight: 500;
     line-height: normal;
 }
-
+.nav-item:hover{
+    color: red;
+}
 .rating-parent {
     display: flex;
     margin-top: 10px;

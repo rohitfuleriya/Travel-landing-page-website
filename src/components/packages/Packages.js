@@ -128,7 +128,7 @@ function Packages() {
                   </a>
                 </li>
                 <li>
-                  <a data-scroll="photo" href="#photo" className="scroll-link">
+                  <a data-scroll="photo" href="#photo" className="scroll-link" >
                     Photo
                   </a>
                 </li>
@@ -215,7 +215,7 @@ function Packages() {
                     </div>
                   </div>
                 </div>
-                <div className="all-package-details2">
+                <div id="description" className="all-package-details2">
                   <div className="description">
                     <div className="tour-details">
                       <div className="duration-tt">
@@ -342,9 +342,9 @@ function Packages() {
                               <h1 className="itinarary-down-icon">
                                 {" "}
                                 {isButtonOpen ? (
-                                  <FaChevronDown />
-                                ) : (
-                                  <FaChevronUp />
+                                <FaChevronUp />
+                                  ) : (
+                                    <FaChevronDown />
                                 )}
                               </h1>
                             </span>
@@ -511,9 +511,9 @@ function Packages() {
                     </div>
                     {/* Phot0 */}
 
-                    <div className="tour-details">
+                    <div id="photo" className="tour-details">
                       <div className="tour-itinary">
-                        <div className="duration-tt">
+                        <div  className="duration-tt">
                           <h3>Photos</h3>
                           <div className="packages-images">
                             <div className="all-photoes-trip">
@@ -531,9 +531,9 @@ function Packages() {
                       </div>
                     </div>
                     {/* FAQ */}
-                    <div className="tour-details">
+                    <div id="faq" className="tour-details">
                       <div className="tour-itinary">
-                        <div className="duration-tt">
+                        <div  className="duration-tt">
                           <h3>FAQ</h3>
                           <div className="itinary-details">
                             <span onClick={() => handleItemClick(5)}>
@@ -631,7 +631,7 @@ function Packages() {
 
                     {/* Location */}
 
-                    <div className="tour-details">
+                    <div id="location-map" className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Locations</h3>
@@ -651,7 +651,7 @@ function Packages() {
                     </div>
 
                     {/* Rewiew */}
-                    <div className="tour-details">
+                    <div id="reviews" className="tour-details">
                       <div className="tour-itinary">
                         <div className="duration-tt">
                           <h3>Reviews</h3>

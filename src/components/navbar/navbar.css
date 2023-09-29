@@ -60,7 +60,7 @@
     align-items: center;
     border-radius: 7px;
     background: #fff;
-    /* border: 1.3px solid #3D3DFF; */
+    border: 1.3px solid #3D3DFF;
     color: #3D3DFF;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -72,7 +72,7 @@
     align-items: center;
     border-radius: 7px;
     background: #3D3DFF;
-    /* border: 1.3px solid #3D3DFF; */
+    border: 1.3px solid #3D3DFF;
     color: #fff;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;

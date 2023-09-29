@@ -149,8 +149,8 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-buttons">
-          <button className=" navbar-item signup-button">
-            <RouterLink className="whatshapp-link" to="/whatshapp">Talk To Expert</RouterLink>
+          <button className="signup-button">
+            Talk To Expert
           </button>
         </div>
       </nav>

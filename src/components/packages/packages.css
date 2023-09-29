@@ -144,7 +144,7 @@
     color: #287dfa;
 }
 
-.tour-details .time:hover {
+.tour-details:hover .time {
     background: #287dfa;
     color: #fff;
 }
