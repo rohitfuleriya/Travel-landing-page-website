@@ -342,9 +342,9 @@ function Packages() {
                               <h1 className="itinarary-down-icon">
                                 {" "}
                                 {isButtonOpen ? (
-                                <FaChevronUp />
+                                <FaChevronDown />
                                   ) : (
-                                    <FaChevronDown />
+                                    <FaChevronUp />
                                 )}
                               </h1>
                             </span>

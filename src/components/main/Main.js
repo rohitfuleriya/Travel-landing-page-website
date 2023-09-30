@@ -12,9 +12,11 @@ import trave6 from "../Assets/navbar/travel6.jpg";
 import trave7 from "../Assets/navbar/travel7.jpg";
 import trave8 from "../Assets/navbar/travel8.jpg";
 import { Link } from "react-router-dom";
+import { MdLocationOn } from "react-icons/md";
+import { BiSolidCategory } from "react-icons/bi";
+import { BiTime } from "react-icons/bi";
 
 export default function Main() {
-  
   // 1st crausel
   const scrollLeft1 = () => {
     const wrapper = document.querySelector(".wtrip-wrapper1");
@@ -43,8 +45,6 @@ export default function Main() {
   //       behavior: "smooth",
   //     });
   //   }, 3000); // Adjust the interval duration as needed
-
-    
 
   //   return () => {
   //     clearInterval(scrollInterval);
@@ -243,22 +243,374 @@ export default function Main() {
               </div>
               <div className="wtrip-crausel">
                 <div className="wtrip-wrapper1">
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={ladakh} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        <Link to={"/packages"}>
-                          Empire state building Admission
-                        </Link>
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
                         </div>
-                        <div className="review">40 Review</div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div className="crausel-time">
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                        {/* <div className="crausel-time">
                         <div className="crausel-day">
                           <img src={watch} alt="" />
                           <div className="day-time">5 Days</div>
@@ -267,110 +619,10 @@ export default function Main() {
                           <span> From </span>
                           <span>$320</span>{" "}
                         </div>
+                      </div> */}
                       </div>
                     </div>
-                  </div>
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave5} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
-                        </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave6} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
-                        </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave7} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
-                        </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave8} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
-                        </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div
@@ -398,137 +650,382 @@ export default function Main() {
                 &lt;
               </div>
               <div className="wtrip-crausel">
-                <div className="wtrip-wrapper2">
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={ladakh} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
+              <div className="wtrip-wrapper2">
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
                         </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave5} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
-                        </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave6} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
                         </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave7} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
-                        </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="card-crausel">
-                    <img className="crausel-img" src={trave8} alt="" />
-                    <div className="crausel-details">
-                      <div className="nav-item">
-                        Empire state building Admission
-                      </div>
-                      <div className="rating-parent">
-                        <div className="rating">
-                          <span>4.2</span>
-                          <img src={star} alt="" />
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
                         </div>
-                        <div className="review">40 Review</div>
-                      </div>
-                      <div className="crausel-time">
-                        <div className="crausel-day">
-                          <img src={watch} alt="" />
-                          <div className="day-time">5 Days</div>
-                        </div>
-                        <div className="crausel-from">
-                          <span> From </span>
-                          <span>$320</span>{" "}
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to={"packages"} className="crausel-link">
+                    <div className="card-crausel">
+                      <img className="crausel-img" src={ladakh} alt="" />
+                      <div className="crausel-details">
+                        <div className="nav-item">
+                          <h1>Empire state building Admission</h1>
+                        </div>
+                        <div className="main-rating">
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <MdLocationOn className="location-icon" />
+                              <span>Manali</span>
+                            </div>
+                            <div className="review">
+                              <BiSolidCategory className="location-icon" />
+                              <span>Regular</span>
+                            </div>
+                          </div>
+                          <div className="rating-parent">
+                            <div className="rating">
+                              <span>
+                                From{" "}
+                                <strong>
+                                  Rs <span>10000</span>{" "}
+                                  <span className="offer-price">12000</span>{" "}
+                                </strong>
+                              </span>
+                            </div>
+                            <div className="review">
+                              <BiTime />
+                              <span>2N/3D</span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div
-                className="crausal-right-button trip-scroll-button right-button" 
+                className="crausal-right-button trip-scroll-button right-button"
                 onClick={scrollRight2}
               >
                 &gt;

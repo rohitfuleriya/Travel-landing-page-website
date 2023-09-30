@@ -3,8 +3,7 @@ import "./navbar.css";
 import logo from "../Assets/navbar/logo.svg";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { AiOutlineDown } from "react-icons/ai"
-
+import { AiOutlineDown } from "react-icons/ai";
 
 const Navbar = () => {
   // State to control the visibility of the mobile menu
@@ -19,8 +18,8 @@ const Navbar = () => {
     <section id="navbar">
       <nav className="navbar">
         <div className="navbar-logo">
-          <RouterLink to={"/"}>
-          <img src={logo} alt="Logo" />
+          <RouterLink to={"/"} className="scroll">
+            <img src={logo} alt="Logo" />
           </RouterLink>
         </div>
         <div className="dropdown">
@@ -36,21 +35,21 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={-70} // Offset to adjust for the fixed navbar
-                  duration={500} // Duration of the scroll animation (in milliseconds)
+                  duration={100} // Duration of the scroll animation (in milliseconds)
                 >
-                  Home
+                  <RouterLink to={"/"} className="scroll-link">Home</RouterLink>
                 </ScrollLink>
               </li>
-              <li className="navbar-item" >
-                <ScrollLink
+              <li className="navbar-item">
+                <ScrollLink 
                   activeClass="active"
                   to="why"
                   spy={true}
                   smooth={true}
                   offset={-70} // Offset to adjust for the fixed navbar
-                  duration={500} // Duration of the scroll animation (in milliseconds)
+                  duration={100} // Duration of the scroll animation (in milliseconds)
                 >
-                  Why?
+                  <RouterLink to={"/"} className="scroll-link">Why?</RouterLink>
                 </ScrollLink>
               </li>
               <li className="navbar-item" onClick={toggleMobileMenu}>
@@ -60,15 +59,12 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={-70} // Offset to adjust for the fixed navbar
-                  duration={500} // Duration of the scroll animation (in milliseconds)
-                >
-                  Weakend Trips
+                  duration={100} // Duration of the scroll animation (in milliseconds)
+                ><RouterLink to={"/"} className="scroll-link">Weakend Trips</RouterLink>
                 </ScrollLink>
               </li>
-              <li
-                className="navbar-item-dropdown navbar-item"
-              >
-                Trips <AiOutlineDown/>
+              <li className="navbar-item-dropdown navbar-item">
+                Trips <AiOutlineDown />
                 <ol className="trip-itmes-drop">
                   <li>
                     <ScrollLink
@@ -77,9 +73,9 @@ const Navbar = () => {
                       spy={true}
                       smooth={true}
                       offset={-70} // Offset to adjust for the fixed navbar
-                      duration={500} // Duration of the scroll animation (in milliseconds)
-                    >
-                      Ladakh
+                      duration={100} // Duration of the scroll animation (in milliseconds)
+                    ><RouterLink to={"/"}>Ladakh</RouterLink>
+                      
                     </ScrollLink>
                   </li>
                   <li>
@@ -89,9 +85,9 @@ const Navbar = () => {
                       spy={true}
                       smooth={true}
                       offset={-70} // Offset to adjust for the fixed navbar
-                      duration={500} // Duration of the scroll animation (in milliseconds)
-                    >
-                      Manali
+                      duration={100} // Duration of the scroll animation (in milliseconds)
+                    ><RouterLink to={"/"}>Manali</RouterLink>
+                      
                     </ScrollLink>
                   </li>
                   <li>
@@ -101,9 +97,9 @@ const Navbar = () => {
                       spy={true}
                       smooth={true}
                       offset={-70} // Offset to adjust for the fixed navbar
-                      duration={500} // Duration of the scroll animation (in milliseconds)
-                    >
-                      Goa
+                      duration={100} // Duration of the scroll animation (in milliseconds)
+                    ><RouterLink to={"/"}>Goa</RouterLink>
+                      
                     </ScrollLink>
                   </li>
                   <li>
@@ -113,9 +109,9 @@ const Navbar = () => {
                       spy={true}
                       smooth={true}
                       offset={-70} // Offset to adjust for the fixed navbar
-                      duration={500} // Duration of the scroll animation (in milliseconds)
-                    >
-                      Simla
+                      duration={100} // Duration of the scroll animation (in milliseconds)
+                    ><RouterLink to={"/"}>Simla</RouterLink>
+                      
                     </ScrollLink>
                   </li>
                   <li>
@@ -125,33 +121,31 @@ const Navbar = () => {
                       spy={true}
                       smooth={true}
                       offset={-70} // Offset to adjust for the fixed navbar
-                      duration={500} // Duration of the scroll animation (in milliseconds)
-                    >
-                      Himachal
+                      duration={100} // Duration of the scroll animation (in milliseconds)
+                    ><RouterLink to={"/"}>Himachal</RouterLink>
+                      
                     </ScrollLink>
                   </li>
                 </ol>
               </li>
               <li className="navbar-item" onClick={toggleMobileMenu}>
-              <ScrollLink
-                      activeClass="active"
-                      to="Reviews"
-                      spy={true}
-                      smooth={true}
-                      offset={-70} // Offset to adjust for the fixed navbar
-                      duration={500} // Duration of the scroll animation (in milliseconds)
-                    >
-                      Reviews
-                    </ScrollLink>
+                <ScrollLink
+                  activeClass="active"
+                  to="Reviews"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Offset to adjust for the fixed navbar
+                  duration={100} // Duration of the scroll animation (in milliseconds)
+                ><RouterLink to={"/"}>Reviews</RouterLink>
+                  
+                </ScrollLink>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="navbar-buttons">
-          <button className="signup-button">
-            Talk To Expert
-          </button>
+          <button className="signup-button">Talk To Expert</button>
         </div>
       </nav>
     </section>
