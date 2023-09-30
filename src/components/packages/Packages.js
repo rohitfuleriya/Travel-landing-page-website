@@ -636,7 +636,7 @@ function Packages() {
                         <div className="duration-tt">
                           <h3>Locations</h3>
                           <div className="Location-map-embedd">
-                            <iframe
+                            {/* <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3931189378973!2d75.89545980938406!3d22.750787726332767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396303de00fb79f3%3A0x88f3749ff8cb3bdf!2sAwaara%20vibes%20-%20A%20Complete%20Travel%20Solution%20%7C%20Travel%20Agency%20Indore%20%7C%20Online%20Travel%20Booking!5e0!3m2!1sen!2sin!4v1695638221486!5m2!1sen!2sin"
                               width="100%"
                               height="400px"
@@ -644,7 +644,7 @@ function Packages() {
                               allowfullscreen=""
                               loading="lazy"
                               referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
+                            ></iframe> */}
                           </div>
                         </div>
                       </div>

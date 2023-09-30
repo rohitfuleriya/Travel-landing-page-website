@@ -544,7 +544,7 @@ button[type="submit"]:hover {
 
 .inquiry-form3-organized-details-rating {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 20px;

@@ -191,7 +191,7 @@
 .rating-parent,
 .nav-item {
     color: #1E1D4C;
-    text-align: start;
+    text-align: flex-start;
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
